@@ -1,0 +1,151 @@
+[
+    {
+  "id": 11,
+  "type": "missing_information",
+  "question": "Một người điều khiển xe máy bị Cảnh sát giao thông dừng xe để kiểm tra. Người này xuất trình giấy tờ xe và cho biết đã sử dụng phương tiện để di chuyển trên đường quốc lộ. Cảnh sát phát hiện người điều khiển có dấu hiệu vi phạm và lập biên bản xử lý. Hỏi người này có bị xử phạt lỗi vượt quá tốc độ cho phép hay không?",
+
+  "rubric": [
+    {
+      "id": "R1",
+      "category": "TYPE",
+      "expected": "motorcycle"
+    },
+    {
+      "id": "R2",
+      "category": "ACTION",
+      "expected": "speeding"
+    },
+    {
+      "id": "R3",
+      "category": "ATTRIBUTE",
+      "expected": "actual_speed"
+    },
+    {
+      "id": "R4",
+      "category": "ATTRIBUTE",
+      "expected": "speed_limit"
+    },
+    {
+      "id": "R5",
+      "category": "CONCLUSION",
+      "expected": "penalized_only_if_speed_exceeds_limit"
+    },
+    {
+      "id": "R6",
+      "category": "REASON",
+      "expected": "require_speed_comparison"
+    }
+  ],
+
+  "reference_answer": "Chưa thể kết luận người điều khiển có vi phạm lỗi vượt quá tốc độ hay không. Cần biết tốc độ thực tế của phương tiện và tốc độ tối đa được phép trên đoạn đường đó để so sánh. Việc chỉ xác định phương tiện là xe máy và đang lưu thông trên quốc lộ là chưa đủ căn cứ để kết luận vi phạm.",
+
+  "candidate_answer": "Người này chắc chắn bị phạt vì đi xe máy trên quốc lộ thường có tốc độ cao và đã bị cảnh sát lập biên bản.",
+
+  "human_verdict": "failed",
+
+  "asp_facts": [
+    "type(motorcycle).",
+    "action(drive).",
+    "condition(on_highway).",
+    "claim(penalized)."
+  ],
+
+  "asp_rules": [
+    "rubric(r1).",
+    "rubric(r2).",
+    "rubric(r3).",
+    "rubric(r4).",
+    "rubric(r5).",
+    "rubric(r6).",
+
+    "satisfied(r1) :- type(motorcycle).",
+
+    "satisfied(r2) :- action(speeding).",
+
+    "satisfied(r3) :- attribute(actual_speed,V).",
+
+    "satisfied(r4) :- attribute(speed_limit,L).",
+
+    "speed_violation :- attribute(actual_speed,V), attribute(speed_limit,L), V > L.",
+
+    "satisfied(r5) :- speed_violation.",
+
+    "satisfied(r6) :- attribute(actual_speed,_), attribute(speed_limit,_).",
+
+    "insufficient_information :- satisfied(r1), not satisfied(r3).",
+
+    "insufficient_information :- satisfied(r1), not satisfied(r4).",
+
+    "verdict(insufficient_information) :- insufficient_information.",
+
+    "verdict(failed) :- claim(penalized), not speed_violation."
+  ],
+
+  "clingo_encoding": [
+    "type(motorcycle).",
+    "action(drive).",
+    "condition(on_highway).",
+    "claim(penalized).",
+
+    "rubric(r1).",
+    "rubric(r2).",
+    "rubric(r3).",
+    "rubric(r4).",
+    "rubric(r5).",
+    "rubric(r6).",
+
+    "satisfied(r1) :- type(motorcycle).",
+
+    "satisfied(r2) :- action(speeding).",
+
+    "satisfied(r3) :- attribute(actual_speed,V).",
+
+    "satisfied(r4) :- attribute(speed_limit,L).",
+
+    "speed_violation :- attribute(actual_speed,V), attribute(speed_limit,L), V > L.",
+
+    "satisfied(r5) :- speed_violation.",
+
+    "satisfied(r6) :- attribute(actual_speed,_), attribute(speed_limit,_).",
+
+    "insufficient_information :- satisfied(r1), not satisfied(r3).",
+
+    "insufficient_information :- satisfied(r1), not satisfied(r4).",
+
+    "verdict(insufficient_information) :- insufficient_information.",
+
+    "verdict(failed) :- claim(penalized), not speed_violation.",
+
+    "#show satisfied/1.",
+    "#show violated/1.",
+    "#show verdict/1.",
+    "#show insufficient_information/1."
+  ],
+
+  "asp_output": {
+    "satisfied_rules": [
+      "R1"
+    ],
+    "violated_rules": [
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6"
+    ],
+    "final_verdict": "insufficient_information",
+    "reasoning_trace": [
+      "type(motorcycle)",
+      "missing attribute(actual_speed)",
+      "missing attribute(speed_limit)",
+      "cannot derive speed_violation",
+      "cannot conclude penalized"
+    ]
+  },
+
+  "baseline_llm_output": {
+    "verdict": "failed",
+    "reason": "The answer incorrectly assumes that riding on a highway means the vehicle exceeded the speed limit."
+  }
+}
+]

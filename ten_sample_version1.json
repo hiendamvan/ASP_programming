@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "type": "simple",
+    "question": "Người điều khiển xe máy vượt đèn đỏ sẽ bị xử phạt như thế nào theo quy định hiện hành?",
+    "rubric": [
+      "R1: Nêu mức phạt tiền từ 4.000.000 đến 6.000.000 đồng.",
+      "R2: Nêu hình thức xử phạt bổ sung là trừ 04 điểm GPLX."
+    ],
+    "reference_answer": "Theo Nghị định 168/2024/NĐ-CP, người điều khiển xe máy vượt đèn đỏ bị phạt tiền từ 4.000.000 đến 6.000.000 đồng và bị trừ 04 điểm giấy phép lái xe.",
+    "candidate_answer": "Người điều khiển xe máy vượt đèn đỏ bị phạt 5.000.000 đồng.",
+    "human_verdict": "partial",
+    "asp_facts": "fact(cand,tien_phat,5000000).",
+    "asp_rules": "rubric(r1). rubric(r2). satisfied(r1):-fact(cand,tien_phat,V),V>=4000000,V<=6000000. satisfied(r2):-fact(cand,hinh_phat_bo_sung,tru_4_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2).",
+    "clingo_encoding": "fact(cand,tien_phat,5000000). rubric(r1). rubric(r2). satisfied(r1):-fact(cand,tien_phat,V),V>=4000000,V<=6000000. satisfied(r2):-fact(cand,hinh_phat_bo_sung,tru_4_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) violated(r2) verdict(partial). Reason: Đúng mức phạt nhưng thiếu hình thức trừ 4 điểm GPLX.",
+    "baseline_llm_output": "Đánh giá: Sai một phần. Câu trả lời đúng mức tiền phạt nhưng thiếu quy định về trừ điểm GPLX."
+  },
+  {
+    "id": 2,
+    "type": "simple",
+    "question": "Người điều khiển xe đạp vượt đèn đỏ bị phạt bao nhiêu tiền?",
+    "rubric": [
+      "R1: Nêu mức phạt từ 150.000 đến 250.000 đồng."
+    ],
+    "reference_answer": "Người điều khiển xe đạp vượt đèn đỏ bị phạt từ 150.000 đến 250.000 đồng.",
+    "candidate_answer": "Người đi xe đạp vượt đèn đỏ bị phạt 500.000 đồng.",
+    "human_verdict": "failed",
+    "asp_facts": "fact(cand,tien_phat,500000).",
+    "asp_rules": "rubric(r1). satisfied(r1):-fact(cand,tien_phat,V),V>=150000,V<=250000. violated(r1):-rubric(r1),not satisfied(r1). verdict(perfect):-not violated(r1). verdict(failed):-violated(r1).",
+    "clingo_encoding": "fact(cand,tien_phat,500000). rubric(r1). satisfied(r1):-fact(cand,tien_phat,V),V>=150000,V<=250000. violated(r1):-rubric(r1),not satisfied(r1). verdict(perfect):-not violated(r1). verdict(failed):-violated(r1). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "violated(r1) verdict(failed). Reason: 500.000 đồng vượt quá khung quy định.",
+    "baseline_llm_output": "Đánh giá: Sai. Mức phạt không đúng."
+  },
+  {
+    "id": 3,
+    "type": "simple",
+    "question": "Người đi bộ vượt đèn đỏ có bị xử phạt không? Nếu có thì mức phạt là bao nhiêu?",
+    "rubric": [
+      "R1: Khẳng định có bị xử phạt.",
+      "R2: Nêu mức phạt từ 150.000 đến 250.000 đồng."
+    ],
+    "reference_answer": "Có. Người đi bộ vượt đèn đỏ bị phạt từ 150.000 đến 250.000 đồng.",
+    "candidate_answer": "Có, người đi bộ vượt đèn đỏ bị phạt 200.000 đồng.",
+    "human_verdict": "perfect",
+    "asp_facts": "fact(cand,bi_phat,co). fact(cand,tien_phat,200000).",
+    "asp_rules": "rubric(r1). rubric(r2). satisfied(r1):-fact(cand,bi_phat,co). satisfied(r2):-fact(cand,tien_phat,V),V>=150000,V<=250000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2).",
+    "clingo_encoding": "fact(cand,bi_phat,co). fact(cand,tien_phat,200000). rubric(r1). rubric(r2). satisfied(r1):-fact(cand,bi_phat,co). satisfied(r2):-fact(cand,tien_phat,V),V>=150000,V<=250000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) satisfied(r2) verdict(perfect).",
+    "baseline_llm_output": "Đánh giá: Đúng hoàn toàn."
+  },
+  {
+    "id": 4,
+    "type": "simple",
+    "question": "Người điều khiển xe máy không đội mũ bảo hiểm bị xử phạt như thế nào?",
+    "rubric": [
+      "R1: Nêu mức phạt từ 400.000 đến 600.000 đồng."
+    ],
+    "reference_answer": "Người điều khiển xe máy không đội mũ bảo hiểm bị phạt từ 400.000 đến 600.000 đồng.",
+    "candidate_answer": "Người điều khiển xe máy không đội mũ bảo hiểm bị phạt 600.000 đồng.",
+    "human_verdict": "perfect",
+    "asp_facts": "fact(cand,tien_phat,600000).",
+    "asp_rules": "rubric(r1). satisfied(r1):-fact(cand,tien_phat,V),V>=400000,V<=600000. violated(r1):-rubric(r1),not satisfied(r1). verdict(perfect):-not violated(r1). verdict(failed):-violated(r1).",
+    "clingo_encoding": "fact(cand,tien_phat,600000). rubric(r1). satisfied(r1):-fact(cand,tien_phat,V),V>=400000,V<=600000. violated(r1):-rubric(r1),not satisfied(r1). verdict(perfect):-not violated(r1). verdict(failed):-violated(r1). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) verdict(perfect).",
+    "baseline_llm_output": "Đánh giá: Đúng hoàn toàn."
+  },
+  {
+    "id": 5,
+    "type": "composite",
+    "question": "Người điều khiển xe máy vừa vượt đèn đỏ vừa không đội mũ bảo hiểm thì bị xử phạt như thế nào?",
+    "rubric": [
+      "R1: Nêu mức phạt lỗi vượt đèn đỏ (4-6 triệu đồng).",
+      "R2: Nêu bị trừ 04 điểm GPLX.",
+      "R3: Nêu mức phạt lỗi không đội mũ bảo hiểm (400.000-600.000 đồng)."
+    ],
+    "reference_answer": "Người vi phạm sẽ bị xử phạt đối với cả hai hành vi: vượt đèn đỏ bị phạt từ 4-6 triệu đồng và trừ 4 điểm GPLX; đồng thời không đội mũ bảo hiểm bị phạt từ 400.000-600.000 đồng.",
+    "candidate_answer": "Người điều khiển xe máy sẽ bị phạt từ 4 đến 6 triệu đồng và bị trừ 4 điểm GPLX.",
+    "human_verdict": "partial",
+    "asp_facts": "fact(cand,tien_phat_redlight,5000000). fact(cand,hinh_phat_bo_sung,tru_4_diem).",
+    "asp_rules": "rubric(r1). rubric(r2). rubric(r3). satisfied(r1):-fact(cand,tien_phat_redlight,V),V>=4000000,V<=6000000. satisfied(r2):-fact(cand,hinh_phat_bo_sung,tru_4_diem). satisfied(r3):-fact(cand,tien_phat_helmet,V),V>=400000,V<=600000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3). verdict(partial):-violated(r3),satisfied(r1),satisfied(r2). verdict(failed):-violated(r1),violated(r2),violated(r3).",
+    "clingo_encoding": "fact(cand,tien_phat_redlight,5000000). fact(cand,hinh_phat_bo_sung,tru_4_diem). rubric(r1). rubric(r2). rubric(r3). satisfied(r1):-fact(cand,tien_phat_redlight,V),V>=4000000,V<=6000000. satisfied(r2):-fact(cand,hinh_phat_bo_sung,tru_4_diem). satisfied(r3):-fact(cand,tien_phat_helmet,V),V>=400000,V<=600000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3). verdict(partial):-violated(r3),satisfied(r1),satisfied(r2). verdict(failed):-violated(r1),violated(r2),violated(r3). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) satisfied(r2) violated(r3) verdict(partial). Reason: Đã trả lời đầy đủ lỗi vượt đèn đỏ nhưng bỏ sót hoàn toàn lỗi không đội mũ bảo hiểm.",
+    "baseline_llm_output": "Đánh giá: Sai một phần. Câu trả lời đúng đối với lỗi vượt đèn đỏ nhưng thiếu xử phạt đối với hành vi không đội mũ bảo hiểm."
+  },
+  {
+    "id": 6,
+    "type": "composite",
+    "question": "Người điều khiển ô tô vừa vượt đèn đỏ vừa sử dụng điện thoại khi đang lái xe thì bị xử phạt như thế nào?",
+    "rubric": [
+      "R1: Nêu mức phạt lỗi vượt đèn đỏ từ 20.000.000 đến 22.000.000 đồng.",
+      "R2: Nêu bị trừ 10 điểm GPLX đối với lỗi vượt đèn đỏ.",
+      "R3: Nêu mức phạt lỗi sử dụng điện thoại từ 2.000.000 đến 3.000.000 đồng.",
+      "R4: Nêu bị trừ 02 điểm GPLX đối với lỗi sử dụng điện thoại."
+    ],
+    "reference_answer": "Người điều khiển ô tô sẽ bị xử phạt đối với cả hai hành vi: vượt đèn đỏ bị phạt từ 20 đến 22 triệu đồng và bị trừ 10 điểm GPLX; đồng thời sử dụng điện thoại khi lái xe bị phạt từ 2 đến 3 triệu đồng và bị trừ 02 điểm GPLX.",
+    "candidate_answer": "Người lái xe sẽ bị phạt 21 triệu đồng và bị trừ 10 điểm GPLX.",
+    "human_verdict": "partial",
+    "asp_facts": "fact(cand,redlight_fine,21000000). fact(cand,redlight_point,tru_10_diem).",
+    "asp_rules": "rubric(r1). rubric(r2). rubric(r3). rubric(r4). satisfied(r1):-fact(cand,redlight_fine,V),V>=20000000,V<=22000000. satisfied(r2):-fact(cand,redlight_point,tru_10_diem). satisfied(r3):-fact(cand,phone_fine,V),V>=2000000,V<=3000000. satisfied(r4):-fact(cand,phone_point,tru_2_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3),not violated(r4). verdict(partial):-satisfied(r1),satisfied(r2),violated(r3),violated(r4). verdict(failed):-violated(r1),violated(r2),violated(r3),violated(r4).",
+    "clingo_encoding": "fact(cand,redlight_fine,21000000). fact(cand,redlight_point,tru_10_diem). rubric(r1). rubric(r2). rubric(r3). rubric(r4). satisfied(r1):-fact(cand,redlight_fine,V),V>=20000000,V<=22000000. satisfied(r2):-fact(cand,redlight_point,tru_10_diem). satisfied(r3):-fact(cand,phone_fine,V),V>=2000000,V<=3000000. satisfied(r4):-fact(cand,phone_point,tru_2_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3),not violated(r4). verdict(partial):-satisfied(r1),satisfied(r2),violated(r3),violated(r4). verdict(failed):-violated(r1),violated(r2),violated(r3),violated(r4). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) satisfied(r2) violated(r3) violated(r4) verdict(partial). Reason: Trả lời đúng xử phạt lỗi vượt đèn đỏ nhưng bỏ sót hoàn toàn lỗi sử dụng điện thoại.",
+    "baseline_llm_output": "Đánh giá: Sai một phần. Đã trả lời đúng một hành vi nhưng chưa đánh giá đầy đủ cả hai lỗi."
+  },
+  {
+    "id": 7,
+    "type": "composite",
+    "question": "Người điều khiển xe máy vừa chở ba người vừa không đội mũ bảo hiểm thì bị xử phạt như thế nào?",
+    "rubric": [
+      "R1: Nêu mức phạt lỗi chở quá số người từ 400.000 đến 600.000 đồng.",
+      "R2: Nêu mức phạt lỗi không đội mũ bảo hiểm từ 400.000 đến 600.000 đồng."
+    ],
+    "reference_answer": "Người điều khiển xe máy bị xử phạt đối với cả hai hành vi: chở quá số người quy định và không đội mũ bảo hiểm, mỗi hành vi đều có mức phạt từ 400.000 đến 600.000 đồng.",
+    "candidate_answer": "Người điều khiển xe máy sẽ bị phạt từ 400.000 đến 600.000 đồng vì chở quá số người.",
+    "human_verdict": "partial",
+    "asp_facts": "fact(cand,overload_fine,500000).",
+    "asp_rules": "rubric(r1). rubric(r2). satisfied(r1):-fact(cand,overload_fine,V),V>=400000,V<=600000. satisfied(r2):-fact(cand,helmet_fine,V),V>=400000,V<=600000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2).",
+    "clingo_encoding": "fact(cand,overload_fine,500000). rubric(r1). rubric(r2). satisfied(r1):-fact(cand,overload_fine,V),V>=400000,V<=600000. satisfied(r2):-fact(cand,helmet_fine,V),V>=400000,V<=600000. violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(partial):-satisfied(r1),violated(r2). verdict(failed):-violated(r1),violated(r2). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) violated(r2) verdict(partial). Reason: Thiếu xử phạt đối với lỗi không đội mũ bảo hiểm.",
+    "baseline_llm_output": "Đánh giá: Sai một phần. Mới trả lời một trong hai hành vi."
+  },
+  {
+    "id": 8,
+    "type": "composite",
+    "question": "Người điều khiển ô tô chạy quá tốc độ trên 35 km/h và đồng thời vượt đèn đỏ gây tai nạn giao thông thì bị xử phạt như thế nào?",
+    "rubric": [
+      "R1: Nêu mức phạt lỗi chạy quá tốc độ từ 10.000.000 đến 12.000.000 đồng.",
+      "R2: Nêu bị trừ 06 điểm GPLX đối với lỗi chạy quá tốc độ.",
+      "R3: Nêu mức phạt lỗi vượt đèn đỏ gây tai nạn từ 20.000.000 đến 22.000.000 đồng.",
+      "R4: Nêu bị trừ 10 điểm GPLX đối với lỗi vượt đèn đỏ gây tai nạn."
+    ],
+    "reference_answer": "Người điều khiển ô tô bị xử phạt đối với cả hai hành vi: chạy quá tốc độ trên 35 km/h bị phạt từ 10 đến 12 triệu đồng và trừ 06 điểm GPLX; vượt đèn đỏ gây tai nạn bị phạt từ 20 đến 22 triệu đồng và trừ 10 điểm GPLX.",
+    "candidate_answer": "Người lái xe bị phạt từ 10 đến 12 triệu đồng và bị trừ 6 điểm GPLX.",
+    "human_verdict": "partial",
+    "asp_facts": "fact(cand,speed_fine,11000000). fact(cand,speed_point,tru_6_diem).",
+    "asp_rules": "rubric(r1). rubric(r2). rubric(r3). rubric(r4). satisfied(r1):-fact(cand,speed_fine,V),V>=10000000,V<=12000000. satisfied(r2):-fact(cand,speed_point,tru_6_diem). satisfied(r3):-fact(cand,redlight_fine,V),V>=20000000,V<=22000000. satisfied(r4):-fact(cand,redlight_point,tru_10_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3),not violated(r4). verdict(partial):-satisfied(r1),satisfied(r2),violated(r3),violated(r4). verdict(failed):-violated(r1),violated(r2),violated(r3),violated(r4).",
+    "clingo_encoding": "fact(cand,speed_fine,11000000). fact(cand,speed_point,tru_6_diem). rubric(r1). rubric(r2). rubric(r3). rubric(r4). satisfied(r1):-fact(cand,speed_fine,V),V>=10000000,V<=12000000. satisfied(r2):-fact(cand,speed_point,tru_6_diem). satisfied(r3):-fact(cand,redlight_fine,V),V>=20000000,V<=22000000. satisfied(r4):-fact(cand,redlight_point,tru_10_diem). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2),not violated(r3),not violated(r4). verdict(partial):-satisfied(r1),satisfied(r2),violated(r3),violated(r4). verdict(failed):-violated(r1),violated(r2),violated(r3),violated(r4). #show satisfied/1. #show violated/1. #show verdict/1.",
+    "asp_output": "satisfied(r1) satisfied(r2) violated(r3) violated(r4) verdict(partial). Reason: Chỉ trả lời phần chạy quá tốc độ, bỏ sót toàn bộ lỗi vượt đèn đỏ gây tai nạn.",
+    "baseline_llm_output": "Đánh giá: Sai một phần. Thiếu một nhóm hành vi cần đánh giá."
+  },
+  {
+    "id": 9,
+    "type": "exception",
+    "question": "Sau khi chứng kiến một vụ va chạm giao thông, anh A điều khiển xe mô tô hai bánh để đưa người bị thương đến cơ sở y tế gần nhất. Trên xe lúc này có anh A, một người hỗ trợ giữ nạn nhân và chính người bị tai nạn, tổng cộng ba người. Anh A khi đi qua ngã tư đã thực hiện vượt đèn đỏ. Hỏi anh A có bị xử phạt không?",
+    "rubric": [
+      "R1: Xác định đây là trường hợp ngoại lệ theo quy định pháp luật.",
+      "R2: Kết luận không bị xử phạt đối với hành vi chở quá số người."
+    ],
+    "reference_answer": "Không. Đây là trường hợp ngoại lệ, người điều khiển xe máy chở người bị tai nạn đi cấp cứu không bị xử phạt về hành vi chở quá số người.",
+    "candidate_answer": "Người điều khiển xe máy vẫn bị phạt từ 400.000 đến 600.000 đồng vì chở quá số người.",
+    "human_verdict": "failed",
+    "asp_facts": "fact(cand,ket_luan,bi_phat).",
+    "asp_rules": "rule(overload). exception(cap_cuu). satisfied(r1):-fact(cand,exception,cap_cuu). satisfied(r2):-fact(cand,ket_luan,khong_bi_phat). violated(R):-rubric(R),not satisfied(R).",
+    "clingo_encoding": "rubric(r1). rubric(r2). fact(cand,ket_luan,bi_phat). satisfied(r1):-fact(cand,exception,cap_cuu). satisfied(r2):-fact(cand,ket_luan,khong_bi_phat). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(failed):-violated(r1),violated(r2). #show violated/1. #show verdict/1.",
+    "asp_output": "violated(r1) violated(r2) verdict(failed). Reason: Không nhận diện trường hợp ngoại lệ và kết luận sai.",
+    "baseline_llm_output": "Đánh giá: Sai. Bỏ qua điều kiện ngoại lệ trong quy định."
+  },
+  {
+    "id": 10,
+    "type": "exception",
+    "question": "Xe cứu hỏa đang thực hiện nhiệm vụ khẩn cấp vượt đèn đỏ có bị xử phạt không?",
+    "rubric": [
+      "R1: Xác định đây là xe ưu tiên đang làm nhiệm vụ khẩn cấp.",
+      "R2: Kết luận không bị xử phạt."
+    ],
+    "reference_answer": "Không. Xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp được phép vượt đèn đỏ theo quy định và không bị xử phạt.",
+    "candidate_answer": "Xe cứu hỏa vượt đèn đỏ sẽ bị phạt từ 20 đến 22 triệu đồng.",
+    "human_verdict": "failed",
+    "asp_facts": "fact(cand,ket_luan,bi_phat).",
+    "asp_rules": "priority_vehicle(X). emergency(X). exception(X):-priority_vehicle(X),emergency(X). satisfied(r1):-fact(cand,xe_uu_tien,co). satisfied(r2):-fact(cand,ket_luan,khong_bi_phat). violated(R):-rubric(R),not satisfied(R).",
+    "clingo_encoding": "rubric(r1). rubric(r2). fact(cand,ket_luan,bi_phat). satisfied(r1):-fact(cand,xe_uu_tien,co). satisfied(r2):-fact(cand,ket_luan,khong_bi_phat). violated(R):-rubric(R),not satisfied(R). verdict(perfect):-not violated(r1),not violated(r2). verdict(failed):-violated(r1),violated(r2). #show violated/1. #show verdict/1.",
+    "asp_output": "violated(r1) violated(r2) verdict(failed). Reason: Không áp dụng quy tắc ngoại lệ dành cho xe ưu tiên.",
+    "baseline_llm_output": "Đánh giá: Sai. Không nhận diện trường hợp xe ưu tiên đang làm nhiệm vụ khẩn cấp."
+  }
+]

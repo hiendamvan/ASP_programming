@@ -1,0 +1,140 @@
+[
+{
+  "id": 0,
+  "type": "exception",
+  "question": "Một xe cứu thương đang làm nhiệm vụ đưa bệnh nhân nguy kịch đến bệnh viện. Khi di chuyển qua khu dân cư lúc 23 giờ, xe liên tục sử dụng còi ưu tiên để yêu cầu các phương tiện khác nhường đường. Một người cho rằng xe cứu thương đã vi phạm quy định cấm sử dụng còi trong khu dân cư từ 22 giờ đến 05 giờ sáng và phải bị xử phạt. Theo quy định của pháp luật, nhận định này có đúng không? Hãy giải thích.",
+
+  "rubric": [
+    {
+      "id": "R1",
+      "category": "TYPE",
+      "expected": "emergency_vehicle"
+    },
+    {
+      "id": "R2",
+      "category": "ACTION",
+      "expected": "use_horn"
+    },
+    {
+      "id": "R3",
+      "category": "CONTEXT",
+      "expected": "night_time"
+    },
+    {
+      "id": "R4",
+      "category": "CONTEXT",
+      "expected": "on_emergency_duty"
+    },
+    {
+      "id": "R5",
+      "category": "EXCEPTION",
+      "expected": "emergency_vehicle_on_duty"
+    },
+    {
+      "id": "R6",
+      "category": "CONCLUSION",
+      "expected": "not_penalized"
+    },
+    {
+      "id": "R7",
+      "category": "REASON",
+      "expected": "exception_applied"
+    }
+  ],
+
+  "reference_answer": "Không. Xe cứu thương là xe ưu tiên và đang thực hiện nhiệm vụ khẩn cấp. Mặc dù sử dụng còi trong khu dân cư lúc 23 giờ, đây là trường hợp ngoại lệ được pháp luật cho phép. Vì vậy xe không bị xử phạt về hành vi sử dụng còi ban đêm.",
+
+  "candidate_answer": "Xe cứu thương vẫn bị xử phạt vì mọi phương tiện đều không được sử dụng còi trong khu dân cư từ 22 giờ đến 05 giờ.",
+
+  "human_verdict": "failed",
+  "asp_facts": [
+    "type(emergency_vehicle).",
+    "action(use_horn).",
+    "context(night_time).",
+    "context(residential_area).",
+    "context(on_emergency_duty).",
+    "conclusion(penalized).",
+    "reason(general_night_horn_rule)."
+  ],
+
+  "asp_rules": [
+    "exception(emergency_vehicle_on_duty) :- type(emergency_vehicle), context(on_emergency_duty).",
+    "satisfied(r1) :- type(emergency_vehicle).",
+    "satisfied(r2) :- action(use_horn).",
+    "satisfied(r3) :- context(night_time).",
+    "satisfied(r4) :- context(on_emergency_duty).",
+    "satisfied(r5) :- exception(emergency_vehicle_on_duty).",
+    "satisfied(r6) :- conclusion(not_penalized).",
+    "satisfied(r7) :- reason(exception_applied).",
+    "violated(R) :- rubric(R), not satisfied(R).",
+    "verdict(perfect) :- not violated(_).",
+    "verdict(failed) :- violated(_)."
+  ],
+
+  "clingo_encoding": [
+    "rubric(r1).",
+    "rubric(r2).",
+    "rubric(r3).",
+    "rubric(r4).",
+    "rubric(r5).",
+    "rubric(r6).",
+    "rubric(r7).",
+
+    "type(emergency_vehicle).",
+    "action(use_horn).",
+    "context(night_time).",
+    "context(residential_area).",
+    "context(on_emergency_duty).",
+    "conclusion(penalized).",
+    "reason(general_night_horn_rule).",
+
+    "exception(emergency_vehicle_on_duty) :- type(emergency_vehicle), context(on_emergency_duty).",
+
+    "satisfied(r1) :- type(emergency_vehicle).",
+    "satisfied(r2) :- action(use_horn).",
+    "satisfied(r3) :- context(night_time).",
+    "satisfied(r4) :- context(on_emergency_duty).",
+    "satisfied(r5) :- exception(emergency_vehicle_on_duty).",
+    "satisfied(r6) :- conclusion(not_penalized).",
+    "satisfied(r7) :- reason(exception_applied).",
+
+    "violated(R) :- rubric(R), not satisfied(R).",
+
+    "verdict(perfect) :- not violated(_).",
+    "verdict(failed) :- violated(_).",
+
+    "#show satisfied/1.",
+    "#show violated/1.",
+    "#show verdict/1."
+  ],
+
+  "asp_output": {
+    "satisfied_rules": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "violated_rules": [
+      "R6",
+      "R7"
+    ],
+    "final_verdict": "failed",
+    "reasoning_trace": [
+      "type(emergency_vehicle)",
+      "context(on_emergency_duty)",
+      "exception(emergency_vehicle_on_duty)",
+      "candidate conclusion = penalized",
+      "expected conclusion = not_penalized",
+      "candidate reason = general_night_horn_rule",
+      "expected reason = exception_applied"
+    ]
+  },
+
+  "baseline_llm_output": {
+    "verdict": "failed",
+    "reason": "Câu trả lời bỏ qua ngoại lệ dành cho xe ưu tiên đang làm nhiệm vụ khẩn cấp."
+  }
+}
+]

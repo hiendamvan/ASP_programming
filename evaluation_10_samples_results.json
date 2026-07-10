@@ -1,0 +1,237 @@
+[
+    {
+        "id": 1,
+        "question": "Người điều khiển xe máy vượt đèn đỏ sẽ bị xử phạt như thế nào theo quy định hiện hành?",
+        "candidate_answer": "Người điều khiển xe máy vượt đèn đỏ bị phạt 5.000.000 đồng.",
+        "human_verdict": "partial",
+        "asp_output": "satisfied(r1) violated(r2) verdict(partial). Reason: Đúng mức phạt nhưng thiếu hình thức trừ 4 điểm GPLX.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu mức phạt tiền là 5.000.000 đồng, nằm trong khoảng từ 4.000.000 đến 6.000.000 đồng theo quy định."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Fail",
+                    "explanation": "Ứng viên không đề cập đến hình thức xử phạt bổ sung là trừ 04 điểm GPLX."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 2,
+        "question": "Người điều khiển xe đạp vượt đèn đỏ bị phạt bao nhiêu tiền?",
+        "candidate_answer": "Người đi xe đạp vượt đèn đỏ bị phạt 500.000 đồng.",
+        "human_verdict": "failed",
+        "asp_output": "violated(r1) verdict(failed). Reason: 500.000 đồng vượt quá khung quy định.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Fail",
+                    "explanation": "Mức phạt nêu trong câu trả lời của ứng viên (500.000 đồng) không đúng với mức phạt quy định (150.000 đến 250.000 đồng)."
+                }
+            ],
+            "overall_verdict": "failed"
+        }
+    },
+    {
+        "id": 3,
+        "question": "Người đi bộ vượt đèn đỏ có bị xử phạt không? Nếu có thì mức phạt là bao nhiêu?",
+        "candidate_answer": "Có, người đi bộ vượt đèn đỏ bị phạt 200.000 đồng.",
+        "human_verdict": "perfect",
+        "asp_output": "satisfied(r1) satisfied(r2) verdict(perfect).",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã khẳng định có bị xử phạt."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Fail",
+                    "explanation": "Ứng viên chỉ nêu một mức phạt cụ thể (200.000 đồng) mà không nêu rõ khoảng mức phạt từ 150.000 đến 250.000 đồng như yêu cầu."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 4,
+        "question": "Người điều khiển xe máy không đội mũ bảo hiểm bị xử phạt như thế nào?",
+        "candidate_answer": "Người điều khiển xe máy không đội mũ bảo hiểm bị phạt 600.000 đồng.",
+        "human_verdict": "perfect",
+        "asp_output": "satisfied(r1) verdict(perfect).",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Fail",
+                    "explanation": "Ứng viên chỉ nêu mức phạt 600.000 đồng mà không nêu rõ mức phạt từ 400.000 đến 600.000 đồng như yêu cầu của tiêu chí và câu trả lời tham chiếu."
+                }
+            ],
+            "overall_verdict": "failed"
+        }
+    },
+    {
+        "id": 5,
+        "question": "Người điều khiển xe máy vừa vượt đèn đỏ vừa không đội mũ bảo hiểm thì bị xử phạt như thế nào?",
+        "candidate_answer": "Người điều khiển xe máy sẽ bị phạt từ 4 đến 6 triệu đồng và bị trừ 4 điểm GPLX.",
+        "human_verdict": "partial",
+        "asp_output": "satisfied(r1) satisfied(r2) violated(r3) verdict(partial). Reason: Đã trả lời đầy đủ lỗi vượt đèn đỏ nhưng bỏ sót hoàn toàn lỗi không đội mũ bảo hiểm.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu đúng mức phạt lỗi vượt đèn đỏ là từ 4 đến 6 triệu đồng."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu đúng việc bị trừ 4 điểm GPLX."
+                },
+                {
+                    "rubric_id": "R3",
+                    "status": "Fail",
+                    "explanation": "Ứng viên chưa nêu mức phạt lỗi không đội mũ bảo hiểm."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 6,
+        "question": "Người điều khiển ô tô vừa vượt đèn đỏ vừa sử dụng điện thoại khi đang lái xe thì bị xử phạt như thế nào?",
+        "candidate_answer": "Người lái xe sẽ bị phạt 21 triệu đồng và bị trừ 10 điểm GPLX.",
+        "human_verdict": "partial",
+        "asp_output": "satisfied(r1) satisfied(r2) violated(r3) violated(r4) verdict(partial). Reason: Trả lời đúng xử phạt lỗi vượt đèn đỏ nhưng bỏ sót hoàn toàn lỗi sử dụng điện thoại.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu mức phạt 21 triệu đồng, nằm trong khoảng từ 20.000.000 đến 22.000.000 đồng."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu đúng việc bị trừ 10 điểm GPLX đối với lỗi vượt đèn đỏ."
+                },
+                {
+                    "rubric_id": "R3",
+                    "status": "Fail",
+                    "explanation": "Ứng viên không nêu mức phạt lỗi sử dụng điện thoại khi lái xe."
+                },
+                {
+                    "rubric_id": "R4",
+                    "status": "Fail",
+                    "explanation": "Ứng viên không nêu việc bị trừ 02 điểm GPLX đối với lỗi sử dụng điện thoại."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 7,
+        "question": "Người điều khiển xe máy vừa chở ba người vừa không đội mũ bảo hiểm thì bị xử phạt như thế nào?",
+        "candidate_answer": "Người điều khiển xe máy sẽ bị phạt từ 400.000 đến 600.000 đồng vì chở quá số người.",
+        "human_verdict": "partial",
+        "asp_output": "satisfied(r1) violated(r2) verdict(partial). Reason: Thiếu xử phạt đối với lỗi không đội mũ bảo hiểm.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Ứng viên đã nêu đúng mức phạt lỗi chở quá số người từ 400.000 đến 600.000 đồng."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Fail",
+                    "explanation": "Ứng viên chưa nêu mức phạt lỗi không đội mũ bảo hiểm."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 8,
+        "question": "Người điều khiển ô tô chạy quá tốc độ trên 35 km/h và đồng thời vượt đèn đỏ gây tai nạn giao thông thì bị xử phạt như thế nào?",
+        "candidate_answer": "Người lái xe bị phạt từ 10 đến 12 triệu đồng và bị trừ 6 điểm GPLX.",
+        "human_verdict": "partial",
+        "asp_output": "satisfied(r1) satisfied(r2) violated(r3) violated(r4) verdict(partial). Reason: Chỉ trả lời phần chạy quá tốc độ, bỏ sót toàn bộ lỗi vượt đèn đỏ gây tai nạn.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Pass",
+                    "explanation": "Câu trả lời của ứng viên đã nêu đúng mức phạt lỗi chạy quá tốc độ từ 10 đến 12 triệu đồng."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Pass",
+                    "explanation": "Câu trả lời của ứng viên đã nêu đúng việc bị trừ 06 điểm GPLX đối với lỗi chạy quá tốc độ."
+                },
+                {
+                    "rubric_id": "R3",
+                    "status": "Fail",
+                    "explanation": "Câu trả lời của ứng viên chưa nêu mức phạt lỗi vượt đèn đỏ gây tai nạn từ 20.000.000 đến 22.000.000 đồng."
+                },
+                {
+                    "rubric_id": "R4",
+                    "status": "Fail",
+                    "explanation": "Câu trả lời của ứng viên chưa nêu việc bị trừ 10 điểm GPLX đối với lỗi vượt đèn đỏ gây tai nạn."
+                }
+            ],
+            "overall_verdict": "partial"
+        }
+    },
+    {
+        "id": 9,
+        "question": "Sau khi chứng kiến một vụ va chạm giao thông, anh A điều khiển xe mô tô hai bánh để đưa người bị thương đến cơ sở y tế gần nhất. Trên xe lúc này có anh A, một người hỗ trợ giữ nạn nhân và chính người bị tai nạn, tổng cộng ba người. Anh A khi đi qua ngã tư đã thực hiện vượt đèn đỏ. Hỏi anh A có bị xử phạt không?",
+        "candidate_answer": "Người điều khiển xe máy vẫn bị phạt từ 400.000 đến 600.000 đồng vì chở quá số người.",
+        "human_verdict": "failed",
+        "asp_output": "violated(r1) violated(r2) verdict(failed). Reason: Không nhận diện trường hợp ngoại lệ và kết luận sai.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Fail",
+                    "explanation": "Ứng viên không xác định được đây là trường hợp ngoại lệ theo quy định pháp luật về việc chở người đi cấp cứu."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Fail",
+                    "explanation": "Ứng viên kết luận sai rằng người điều khiển xe máy sẽ bị xử phạt về hành vi chở quá số người, trong khi đây là trường hợp ngoại lệ không bị xử phạt."
+                }
+            ],
+            "overall_verdict": "failed"
+        }
+    },
+    {
+        "id": 10,
+        "question": "Xe cứu hỏa đang thực hiện nhiệm vụ khẩn cấp vượt đèn đỏ có bị xử phạt không?",
+        "candidate_answer": "Xe cứu hỏa vượt đèn đỏ sẽ bị phạt từ 20 đến 22 triệu đồng.",
+        "human_verdict": "failed",
+        "asp_output": "violated(r1) violated(r2) verdict(failed). Reason: Không áp dụng quy tắc ngoại lệ dành cho xe ưu tiên.",
+        "gemini_evaluation": {
+            "evaluations": [
+                {
+                    "rubric_id": "R1",
+                    "status": "Fail",
+                    "explanation": "Ứng viên không xác định được xe cứu hỏa trong trường hợp này là xe ưu tiên đang làm nhiệm vụ khẩn cấp, mà chỉ coi là hành vi vượt đèn đỏ thông thường."
+                },
+                {
+                    "rubric_id": "R2",
+                    "status": "Fail",
+                    "explanation": "Ứng viên kết luận sai rằng xe cứu hỏa sẽ bị xử phạt, trong khi thực tế xe ưu tiên làm nhiệm vụ khẩn cấp không bị xử phạt."
+                }
+            ],
+            "overall_verdict": "failed"
+        }
+    }
+]

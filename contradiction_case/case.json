@@ -1,0 +1,149 @@
+{
+  "id": 12,
+  "type": "contradiction",
+  "question": "Một xe cứu thương đang vận chuyển bệnh nhân cấp cứu đến bệnh viện. Trong quá trình di chuyển, xe vượt đèn đỏ tại một giao lộ để nhanh chóng đưa bệnh nhân đi cấp cứu. Hỏi hành vi vượt đèn đỏ của xe cứu thương trong trường hợp này có bị xử phạt không?",
+
+  "rubric": [
+    {
+      "id": "R1",
+      "category": "TYPE",
+      "expected": "emergency_vehicle"
+    },
+    {
+      "id": "R2",
+      "category": "ACTION",
+      "expected": "run_red_light"
+    },
+    {
+      "id": "R3",
+      "category": "CONDITION",
+      "expected": "on_emergency_duty"
+    },
+    {
+      "id": "R4",
+      "category": "EXCEPTION",
+      "expected": "emergency_vehicle_priority"
+    },
+    {
+      "id": "R5",
+      "category": "CONCLUSION",
+      "expected": "not_penalized"
+    },
+    {
+      "id": "R6",
+      "category": "CONSISTENCY",
+      "expected": "no_conflicting_conclusion"
+    }
+  ],
+
+  "reference_answer": "Xe cứu thương đang thực hiện nhiệm vụ cấp cứu thuộc trường hợp xe ưu tiên. Vì vậy, khi vượt đèn đỏ để thực hiện nhiệm vụ khẩn cấp, xe không bị xử phạt đối với hành vi này.",
+
+  "candidate_answer": "Xe cứu thương là xe ưu tiên đang thực hiện nhiệm vụ cấp cứu nên được phép vượt đèn đỏ và không bị xử phạt. Tuy nhiên, vì hành vi vượt đèn đỏ là hành vi vi phạm giao thông nên xe cứu thương vẫn sẽ bị xử phạt theo quy định.",
+
+  "human_verdict": "failed",
+
+  "asp_facts": [
+    "type(emergency_vehicle).",
+    "action(run_red_light).",
+    "condition(on_emergency_duty).",
+    "claim(not_penalized).",
+    "claim(penalized)."
+  ],
+
+  "asp_rules": [
+    "rubric(r1).",
+    "rubric(r2).",
+    "rubric(r3).",
+    "rubric(r4).",
+    "rubric(r5).",
+    "rubric(r6).",
+
+    "satisfied(r1) :- type(emergency_vehicle).",
+
+    "satisfied(r2) :- action(run_red_light).",
+
+    "satisfied(r3) :- condition(on_emergency_duty).",
+
+    "exception(emergency_vehicle_priority) :- type(emergency_vehicle), condition(on_emergency_duty).",
+
+    "satisfied(r4) :- exception(emergency_vehicle_priority).",
+
+    "satisfied(r5) :- claim(not_penalized).",
+
+    "contradiction :- claim(not_penalized), claim(penalized).",
+
+    "violated(r6) :- contradiction.",
+
+    "verdict(failed) :- contradiction.",
+
+    "verdict(perfect) :- satisfied(r1), satisfied(r2), satisfied(r3), satisfied(r4), satisfied(r5), not contradiction."
+  ],
+
+  "clingo_encoding": [
+    "type(emergency_vehicle).",
+    "action(run_red_light).",
+    "condition(on_emergency_duty).",
+
+    "claim(not_penalized).",
+    "claim(penalized).",
+
+    "rubric(r1).",
+    "rubric(r2).",
+    "rubric(r3).",
+    "rubric(r4).",
+    "rubric(r5).",
+    "rubric(r6).",
+
+    "satisfied(r1) :- type(emergency_vehicle).",
+
+    "satisfied(r2) :- action(run_red_light).",
+
+    "satisfied(r3) :- condition(on_emergency_duty).",
+
+    "exception(emergency_vehicle_priority) :- type(emergency_vehicle), condition(on_emergency_duty).",
+
+    "satisfied(r4) :- exception(emergency_vehicle_priority).",
+
+    "satisfied(r5) :- claim(not_penalized).",
+
+    "contradiction :- claim(not_penalized), claim(penalized).",
+
+    "violated(r6) :- contradiction.",
+
+    "verdict(failed) :- contradiction.",
+
+    "verdict(perfect) :- satisfied(r1), satisfied(r2), satisfied(r3), satisfied(r4), satisfied(r5), not contradiction.",
+
+    "#show satisfied/1.",
+    "#show violated/1.",
+    "#show contradiction/1.",
+    "#show verdict/1."
+  ],
+
+  "asp_output": {
+    "satisfied_rules": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "violated_rules": [
+      "R6"
+    ],
+    "final_verdict": "failed",
+    "reasoning_trace": [
+      "Detected type(emergency_vehicle)",
+      "Detected action(run_red_light)",
+      "Detected exception(emergency_vehicle_priority)",
+      "Candidate contains claim(not_penalized)",
+      "Candidate contains claim(penalized)",
+      "Logical contradiction detected"
+    ]
+  },
+
+  "baseline_llm_output": {
+    "verdict": "partial",
+    "reason": "The answer correctly identifies that emergency vehicles have priority but mentions that penalties may still apply."
+  }
+}
