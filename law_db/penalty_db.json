@@ -1,0 +1,1205 @@
+[
+  {
+    "article_id": 12,
+    "clause_id": "14",
+    "point_id": null,
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 12,
+    "clause_id": "11",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 12,
+    "clause_id": "11",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "3",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "3",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "5",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "6",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "7",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "7",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "8",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 13,
+    "clause_id": "8",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 14,
+    "clause_id": "8",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 14,
+    "clause_id": "8",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 14,
+    "clause_id": "8",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 14,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 17,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 17,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "3",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "3",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "3",
+    "point_id": "e",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "e",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "g",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "h",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "i",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "k",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "5",
+    "point_id": "m",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "6",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "7",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "2",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "8",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "2",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 20,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "2",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "2",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "2",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "3",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "5",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "6",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "6",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "6",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "6",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "6",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "8",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "8",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "8",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "10",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "9",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "7",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 8,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "8",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "8",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 21,
+    "clause_id": "11",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 22,
+    "clause_id": "6",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 22,
+    "clause_id": "6",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 22,
+    "clause_id": "6",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 23,
+    "clause_id": "7",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 23,
+    "clause_id": "7",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 23,
+    "clause_id": "7",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 24,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 25,
+    "clause_id": "2",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "2",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "6",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "6",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "6",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "7",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "7",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "7",
+    "point_id": "e",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "7",
+    "point_id": "i",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 26,
+    "clause_id": "8",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 27,
+    "clause_id": "2",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 27,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 28,
+    "clause_id": "4",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 28,
+    "clause_id": "4",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 29,
+    "clause_id": "4",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 30,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "7",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "7",
+    "point_id": "g",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "7",
+    "point_id": "m",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "8",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "8",
+    "point_id": "e",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "9",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "9",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "9",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "11",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "11",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "11",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "12",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "13",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "h",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "e",
+    "penalty_type": "license_points",
+    "value": 3,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "g",
+    "penalty_type": "license_points",
+    "value": 3,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "13",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "13",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "13",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "14",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "16",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "5",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "6",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "8",
+    "point_id": "h",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "12",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "15",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 8,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "13",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "16",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "5",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 32,
+    "clause_id": "6",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "1",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "3",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "4",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "4",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 3,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "4",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 3,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "5",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 34,
+    "clause_id": "5",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "a",
+    "penalty_type": "license_revocation",
+    "value_min": 10,
+    "value_max": 12,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "b",
+    "penalty_type": "license_revocation",
+    "value_min": 10,
+    "value_max": 12,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "h",
+    "penalty_type": "license_revocation",
+    "value_min": 10,
+    "value_max": 12,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "i",
+    "penalty_type": "license_revocation",
+    "value_min": 10,
+    "value_max": 12,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "k",
+    "penalty_type": "license_revocation",
+    "value_min": 10,
+    "value_max": 12,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "d",
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "đ",
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "e",
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "g",
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "11",
+    "point_id": null,
+    "penalty_type": "license_revocation",
+    "value_min": 22,
+    "value_max": 24,
+    "unit": "month"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "3",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "5",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "6",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "6",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "6",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "7",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 2,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "4",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "6",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "7",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "7",
+    "point_id": "d",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "7",
+    "point_id": "đ",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "8",
+    "point_id": "a",
+    "penalty_type": "license_points",
+    "value": 4,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "7",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "9",
+    "point_id": "c",
+    "penalty_type": "license_points",
+    "value": 6,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "8",
+    "point_id": "b",
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  },
+  {
+    "article_id": 7,
+    "clause_id": "10",
+    "point_id": null,
+    "penalty_type": "license_points",
+    "value": 10,
+    "unit": "point"
+  }
+]

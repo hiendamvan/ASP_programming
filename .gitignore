@@ -1,1 +1,5 @@
 hienv/
+.claude
+.env
+__pycache__/   
+generate_data/
