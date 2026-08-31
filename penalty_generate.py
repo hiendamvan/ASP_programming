@@ -332,9 +332,9 @@ def load_existing_db():
     ) as f:
 
         return json.load(f)
-
-
+           
 def save_db(records):
+
 
     with open(
         OUTPUT_FILE,

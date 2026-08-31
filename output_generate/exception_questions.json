@@ -1,7 +1,7 @@
 [
   {
     "question_type": "exception",
-    "question": "Nếu một người đang thực hiện công việc quản lý, bảo trì đường cao tốc vào đường cao tốc, theo quy định trên, hành vi này có thuộc trường hợp ngoại lệ không? Nếu có, người này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu một người đang thực hiện công việc quản lý hoặc bảo trì đường cao tốc vào trong đường cao tốc, theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Đi vào đường cao tốc",
     "exception": "người phục vụ việc quản lý, bảo trì đường cao tốc",
     "source": {
@@ -15,7 +15,7 @@
   },
   {
     "question_type": "exception",
-    "question": "Nếu một tàu bay không người lái hoặc phương tiện bay siêu nhẹ đã được cấp phép bay hoạt động trong phạm vi khổ giới hạn đường bộ và gây cản trở hoặc nguy cơ mất an toàn cho người, phương tiện tham gia giao thông đường bộ, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Theo quy định pháp luật, nếu người điều khiển một tàu bay không người lái hoặc phương tiện bay siêu nhẹ đã được cấp phép bay, hoạt động trong phạm vi khổ giới hạn đường bộ, có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển vật thể bay, tàu bay không người lái, phương tiện bay siêu nhẹ hoạt động trong phạm vi khổ giới hạn đường bộ gây cản trở hoặc nguy cơ mất an toàn cho người, phương tiện tham gia giao thông đường bộ",
     "exception": "tàu bay không người lái, phương tiện bay siêu nhẹ được cấp phép bay",
     "source": {
@@ -29,7 +29,7 @@
   },
   {
     "question_type": "exception",
-    "question": "Theo quy định pháp luật, nếu người điều khiển xe lắp thêm đèn sương mù dạng rời được lắp theo quy định, thì hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu một người lái xe lắp thêm đèn sương mù dạng rời được lắp theo quy định, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe",
     "exception": "đèn sương mù dạng rời được lắp theo quy định",
     "source": {
@@ -43,8 +43,8 @@
   },
   {
     "question_type": "exception",
-    "question": "Nếu một người điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường, nhưng xe đó là xe đăng ký tạm thời, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên (kể cả rơ moóc và sơ mi rơ moóc).",
+    "question": "Nếu một người lái xe tạm thời đăng ký, không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định), thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên",
     "exception": "xe đăng ký tạm thời",
     "source": {
       "article_id": 13,
@@ -57,7 +57,7 @@
   },
   {
     "question_type": "exception",
-    "question": "Theo quy định pháp luật, nếu một người điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường, nhưng xe đó là xe đăng ký tạm thời, thì người này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Giả sử một người lái xe đăng ký tạm thời, không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường, hoặc giấy chứng nhận đã hết hiệu lực từ 01 tháng trở lên. Theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên (kể cả rơ moóc)",
     "exception": "xe đăng ký tạm thời",
     "source": {
@@ -71,9 +71,23 @@
   },
   {
     "question_type": "exception",
-    "question": "Nếu người lái xe ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến, theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu người lái xe có giấy phép lái xe quốc tế do Việt Nam cấp nhưng không mang theo giấy phép lái xe quốc gia phù hợp với loại xe được phép điều khiển, thì theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Có giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp nhưng không mang theo giấy phép lái xe quốc gia phù hợp với loại xe được phép điều khiển",
+    "exception": "giấy phép lái xe quốc tế do Việt Nam cấp",
+    "source": {
+      "article_id": 18,
+      "clause_id": "18.8",
+      "point_id": "18.8.b",
+      "label": "b",
+      "content": "Có giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp (trừ giấy phép lái xe quốc tế do Việt Nam cấp) nhưng không mang theo giấy phép lái xe quốc gia phù hợp với loại xe được phép điều khiển;"
+    },
+    "sample_id": 6
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người lái xe ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "để người ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến",
-    "exception": "trừ người lái xe, trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật",
+    "exception": "người lái xe, trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật",
     "source": {
       "article_id": 20,
       "clause_id": "20.3",
@@ -81,11 +95,11 @@
       "label": "b",
       "content": "Để người ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến (trừ người lái xe, trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật);"
     },
-    "sample_id": 6
+    "sample_id": 7
   },
   {
     "question_type": "exception",
-    "question": "Nếu tài xế điều khiển một xe buýt nội tỉnh kinh doanh vận tải mà không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm, theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu một tài xế xe buýt nội tỉnh kinh doanh vận tải điều khiển xe mà không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển xe ô tô kinh doanh vận tải không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định",
     "exception": "xe buýt nội tỉnh",
     "source": {
@@ -95,13 +109,13 @@
       "label": "h",
       "content": "Điều khiển xe ô tô kinh doanh vận tải không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định (trừ xe buýt nội tỉnh);"
     },
-    "sample_id": 7
+    "sample_id": 8
   },
   {
     "question_type": "exception",
-    "question": "Nếu một xe xi téc chở chất lỏng vượt quá trọng tải cho phép nhưng trong phạm vi 20% đến 30%, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 30%",
-    "exception": "xe xi téc chở chất lỏng",
+    "question": "Theo quy định, nếu một tài xế điều khiển xe xi téc chở chất lỏng, chở hàng vượt trọng tải 25% so với trọng tải quy định và có giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường, thì trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 30%",
+    "exception": "trừ xe xi téc chở chất lỏng",
     "source": {
       "article_id": 21,
       "clause_id": "21.2",
@@ -109,13 +123,13 @@
       "label": "a",
       "content": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 30% (trừ xe xi téc chở chất lỏng), trên 20% đến 30% đối với xe xi téc chở chất lỏng;"
     },
-    "sample_id": 8
+    "sample_id": 9
   },
   {
     "question_type": "exception",
-    "question": "Nếu một người vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và có giấy phép lưu hành trên đường bộ, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Vận chuyển hàng hóa là phương tiện vận tải, máy móc, thiết bị kỹ thuật, hàng dạng trụ không chằng buộc hoặc chằng buộc không theo quy định",
-    "exception": "việc vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ",
+    "question": "Nếu một người vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và đã có giấy phép lưu hành trên đường bộ, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "vận chuyển hàng hóa dạng trụ không chằng buộc hoặc chằng buộc không theo quy định",
+    "exception": "vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ",
     "source": {
       "article_id": 21,
       "clause_id": "21.10",
@@ -123,13 +137,13 @@
       "label": "a",
       "content": "Vận chuyển hàng hóa là phương tiện vận tải, máy móc, thiết bị kỹ thuật, hàng dạng trụ không chằng buộc hoặc chằng buộc không theo quy định (trừ việc vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ);"
     },
-    "sample_id": 9
+    "sample_id": 10
   },
   {
     "question_type": "exception",
-    "question": "Theo quy định pháp luật, nếu một xe xi téc chở chất lỏng được xếp hàng hóa vượt quá trọng tải cho phép 15%, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Xếp hàng hóa lên mỗi xe ô tô (kể cả rơ moóc và sơ mi rơ moóc) vượt quá trọng tải cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 50%",
-    "exception": "Trừ xe xi téc chở chất lỏng, mức vượt quá cho phép chỉ tính từ 20% đến 50%",
+    "question": "Trong trường hợp một tài xế xếp hàng hóa lên xe ô tô chở chất lỏng và khối lượng hàng vượt quá trọng tải cho phép trên 10% (nhưng dưới 20%), theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Xếp hàng hóa lên xe ô tô (kể cả rơ moóc và sơ mi rơ moóc) vượt quá trọng tải cho phép tham gia giao thông trên 10% đến 50%",
+    "exception": "xe xi téc chở chất lỏng",
     "source": {
       "article_id": 26,
       "clause_id": "26.1",
@@ -137,11 +151,11 @@
       "label": "a",
       "content": "Xếp hàng hóa lên mỗi xe ô tô (kể cả rơ moóc và sơ mi rơ moóc) vượt quá trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 50% (trừ xe xi téc chở chất lỏng), trên 20% đến 50% đối với xe xi téc chở chất lỏng;"
     },
-    "sample_id": 10
+    "sample_id": 11
   },
   {
     "question_type": "exception",
-    "question": "Theo quy định pháp luật, nếu một xe buýt nội tỉnh kinh doanh vận tải hành khách không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm, thì hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu một xe buýt nội tỉnh được sử dụng mà không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm, theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Sử dụng xe ô tô kinh doanh vận tải hành khách không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định",
     "exception": "xe buýt nội tỉnh",
     "source": {
@@ -151,13 +165,13 @@
       "label": "đ",
       "content": "Sử dụng xe ô tô kinh doanh vận tải hành khách không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định (trừ xe buýt nội tỉnh);"
     },
-    "sample_id": 11
+    "sample_id": 12
   },
   {
     "question_type": "exception",
-    "question": "Nếu người thực hiện hành vi vi phạm quy định nhưng phương tiện của họ bị tịch thu, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Thực hiện hành vi vi phạm quy định tại các điểm, khoản nêu trên buộc làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định",
-    "exception": "trừ trường hợp bị tịch thu phương tiện",
+    "question": "Nếu người vi phạm các quy định tại các điểm, khoản nêu trên nhưng phương tiện của họ bị tịch thu, thì theo quy định pháp luật, họ có phải thực hiện các thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Thực hiện hành vi vi phạm quy định tại điểm b khoản 3; điểm b, điểm c, điểm h khoản 7; điểm d, điểm đ khoản 8; điểm a khoản 12 Điều này buộc làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định",
+    "exception": "trường hợp bị tịch thu phương tiện",
     "source": {
       "article_id": 32,
       "clause_id": "32.19",
@@ -165,11 +179,11 @@
       "label": "g",
       "content": "Thực hiện hành vi vi phạm quy định tại điểm b khoản 3; điểm b, điểm c, điểm h khoản 7; điểm d, điểm đ khoản 8; điểm a khoản 12 Điều này buộc làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định (trừ trường hợp bị tịch thu phương tiện);"
     },
-    "sample_id": 12
+    "sample_id": 13
   },
   {
     "question_type": "exception",
-    "question": "Nếu một người điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ, nhưng có giấy phép lưu hành còn giá trị sử dụng, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Nếu một người lái xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ, nhưng người đó có giấy phép lưu hành còn giá trị sử dụng, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông",
     "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
     "source": {
@@ -179,7 +193,7 @@
       "label": "c",
       "content": "Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
     },
-    "sample_id": 13
+    "sample_id": 14
   },
   {
     "question_type": "exception",
@@ -193,12 +207,12 @@
       "label": "d",
       "content": "Điều khiển xe có kích thước bao ngoài vượt quá kích thước giới hạn cho phép của xe theo quy định, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng."
     },
-    "sample_id": 14
+    "sample_id": 15
   },
   {
     "question_type": "exception",
-    "question": "Một người lái xe điều khiển xe có tổng trọng lượng vượt quá tải trọng cho phép của đường bộ từ 20% đến 50%, nhưng xe có giấy phép lưu hành còn giá trị sử dụng. Theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 20% đến 50%",
+    "question": "Theo quy định pháp luật, nếu người lái xe điều khiển xe có tổng trọng lượng vượt quá tải trọng cho phép của đường bộ từ 20% đến 50% nhưng có giấy phép lưu hành còn giá trị sử dụng, thì trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 20% đến 50%",
     "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
     "source": {
       "article_id": 34,
@@ -207,11 +221,11 @@
       "label": "a",
       "content": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 20% đến 50%, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
     },
-    "sample_id": 15
+    "sample_id": 16
   },
   {
     "question_type": "exception",
-    "question": "Nếu một người điều khiển xe có tổng trọng lượng vượt quá tải trọng cho phép của đường bộ trên 50% nhưng có giấy phép lưu hành còn giá trị sử dụng, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Theo quy định pháp luật, nếu người lái xe điều khiển xe có tổng trọng lượng (hoặc tải trọng trục xe) vượt quá tải trọng cho phép của đường bộ trên 50% nhưng có giấy phép lưu hành còn giá trị sử dụng, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 50%",
     "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
     "source": {
@@ -221,7 +235,7 @@
       "label": "a",
       "content": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 50%, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
     },
-    "sample_id": 16
+    "sample_id": 17
   },
   {
     "question_type": "exception",
@@ -235,13 +249,13 @@
       "label": "đ",
       "content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định."
     },
-    "sample_id": 17
+    "sample_id": 18
   },
   {
     "question_type": "exception",
-    "question": "Nếu tài xế gặp xe đi ngược chiều trên đoạn đường có dải phân cách có khả năng chống chói và vẫn sử dụng còi, rú ga liên tục, thì theo quy định này hành vi có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
-    "normal_action": "Sử dụng còi, rú ga liên tục khi gặp xe đi ngược chiều",
-    "exception": "trường hợp dải phân cách có khả năng chống chói",
+    "question": "Theo quy định pháp luật, nếu tài xế sử dụng còi, rú ga liên tục khi gặp xe đi ngược chiều nhưng có dải phân cách có khả năng chống chói, thì có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường, khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động, khi gặp xe đi ngược chiều, hoặc khi chuyển hướng xe tại nơi đường giao nhau",
+    "exception": "trừ trường hợp dải phân cách có khả năng chống chói; trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
     "source": {
       "article_id": 6,
       "clause_id": "6.3",
@@ -249,11 +263,11 @@
       "label": "b",
       "content": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
     },
-    "sample_id": 18
+    "sample_id": 19
   },
   {
     "question_type": "exception",
-    "question": "Nếu người điều khiển xe thực hiện chuyển hướng không quan sát, không bảo đảm khoảng cách an toàn với xe phía sau, không giảm tốc độ, không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng, nhưng lại điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "question": "Giả sử một người lái xe thực hiện chuyển hướng mà không quan sát, không bảo đảm khoảng cách an toàn với xe phía sau, không giảm tốc độ, và không có tín hiệu báo hướng rẽ, nhưng hành vi này xảy ra trên một đoạn đường bộ có hướng cong ở nơi đường không giao nhau cùng mức. Theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
     "normal_action": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng",
     "exception": "điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức",
     "source": {
@@ -263,6 +277,454 @@
       "label": "c",
       "content": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức);"
     },
-    "sample_id": 19
+    "sample_id": 20
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe ô tô kéo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác mà không tự chạy được, thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe ô tô kéo theo xe khác, vật khác",
+    "exception": "trừ trường hợp kéo theo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác khi xe này không tự chạy được",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.3",
+      "point_id": "6.3.h",
+      "label": "h",
+      "content": "Điều khiển xe ô tô kéo theo xe khác, vật khác (trừ trường hợp kéo theo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác khi xe này không tự chạy được); điều khiển xe ô tô đẩy xe khác, vật khác; điều khiển xe kéo rơ moóc, sơ mi rơ moóc kéo thêm rơ moóc hoặc xe khác, vật khác; không nối chắc chắn, an toàn giữa xe kéo và xe được kéo khi kéo nhau;"
+    },
+    "sample_id": 21
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người điều khiển xe kéo tự ngồi trên xe kéo (tự chở mình), theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Chở người trên xe được kéo",
+    "exception": "người điều khiển",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.3",
+      "point_id": "6.3.i",
+      "label": "i",
+      "content": "Chở người trên xe được kéo, trừ người điều khiển;"
+    },
+    "sample_id": 22
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe ô tô chỉ có một hàng ghế chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét mà không sử dụng thiết bị an toàn phù hợp, theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định",
+    "exception": "loại xe ô tô chỉ có một hàng ghế",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.3",
+      "point_id": "6.3.m",
+      "label": "m",
+      "content": "Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe (trừ loại xe ô tô chỉ có một hàng ghế) hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định;"
+    },
+    "sample_id": 23
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe chạy tốc độ thấp hơn các xe khác đi cùng chiều và không đi về làn đường bên phải chiều đi của mình, nhưng các xe khác cùng chiều đang chạy quá tốc độ quy định, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe chạy tốc độ thấp hơn các xe khác đi cùng chiều mà không đi về làn đường bên phải chiều đi của mình",
+    "exception": "trường hợp các xe khác đi cùng chiều chạy quá tốc độ quy định",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.3",
+      "point_id": "6.3.p",
+      "label": "p",
+      "content": "Điều khiển xe chạy tốc độ thấp hơn các xe khác đi cùng chiều mà không đi về làn đường bên phải chiều đi của mình, trừ trường hợp các xe khác đi cùng chiều chạy quá tốc độ quy định."
+    },
+    "sample_id": 24
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người lái xe dừng xe trên cầu trong trường hợp tổ chức giao thông cho phép, thì theo quy định pháp luật, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Dừng xe, đỗ xe tại các vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu; gầm cầu vượt; song song với một xe khác đang dừng, đỗ.",
+    "exception": "trên cầu, trừ trường hợp tổ chức giao thông cho phép; gầm cầu vượt, trừ những nơi cho phép dừng xe, đỗ xe",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.4",
+      "point_id": "6.4.b",
+      "label": "b",
+      "content": "Dừng xe, đỗ xe tại vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu (trừ trường hợp tổ chức giao thông cho phép), gầm cầu vượt (trừ những nơi cho phép dừng xe, đỗ xe), song song với một xe khác đang dừng, đỗ, trừ hành vi vi phạm quy định tại điểm c khoản 7 Điều này;"
+    },
+    "sample_id": 25
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người lái xe quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường một chiều, và có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại khu vực này có bố trí nơi quay đầu xe, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường một chiều",
+    "exception": "khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.4",
+      "point_id": "6.4.i",
+      "label": "i",
+      "content": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường một chiều, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe;"
+    },
+    "sample_id": 26
+  },
+  {
+    "question_type": "exception",
+    "question": "Theo quy định pháp luật, nếu tài xế tránh xe đi ngược chiều không đúng quy định bằng cách vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều, thì hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Tránh xe đi ngược chiều không đúng quy định",
+    "exception": "hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.5",
+      "point_id": "6.5.c",
+      "label": "c",
+      "content": "Tránh xe đi ngược chiều không đúng quy định (trừ hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định tại điểm b khoản 3 Điều này); không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;"
+    },
+    "sample_id": 27
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp đi vào khu vực cấm có biển báo cấm đi vào đối với loại phương tiện đang điều khiển, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+    "exception": "các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.5",
+      "point_id": "6.5.i",
+      "label": "i",
+      "content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "sample_id": 28
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe điều khiển xe qua vỉa hè để vào nhà hoặc cơ quan, thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có, hình thức xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe đi trên vỉa hè",
+    "exception": "điều khiển xe đi qua vỉa hè để vào nhà, cơ quan",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.6",
+      "point_id": "6.6.d",
+      "label": "d",
+      "content": "Điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan."
+    },
+    "sample_id": 29
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp đi ngược chiều trên đường một chiều có biển \"Cấm đi ngược chiều\", theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\"",
+    "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.9",
+      "point_id": "6.9.d",
+      "label": "d",
+      "content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "sample_id": 30
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp và phải lùi xe trên đường cao tốc, theo quy định trên, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc",
+    "exception": "các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+    "source": {
+      "article_id": 6,
+      "clause_id": "6.11",
+      "point_id": "6.11.đ",
+      "label": "đ",
+      "content": "Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "sample_id": 31
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu tài xế sử dụng đèn chiếu xa khi gặp xe đi ngược chiều trên đoạn đường có dải phân cách có khả năng chống chói, thì theo quy định này, hành vi có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "sử dụng đèn chiếu xa khi gặp xe đi ngược chiều",
+    "exception": "trường hợp dải phân cách có khả năng chống chói",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.1",
+      "point_id": "7.1.h",
+      "label": "h",
+      "content": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;"
+    },
+    "sample_id": 32
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang đi làm nhiệm vụ sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau tại khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+    "exception": "các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.1",
+      "point_id": "7.1.i",
+      "label": "i",
+      "content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
+    },
+    "sample_id": 33
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một tài xế chở một trẻ em dưới 12 tuổi trên xe, theo quy định này hành vi có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Chở theo 02 người trên xe",
+    "exception": "chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.2",
+      "point_id": "7.2.g",
+      "label": "g",
+      "content": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật;"
+    },
+    "sample_id": 34
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu tài xế chở một trẻ em dưới 06 tuổi ngồi trên xe máy mà không đội mũ bảo hiểm, thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có, hình phạt như thế nào?",
+    "normal_action": "Chở người ngồi trên xe không đội mũ bảo hiểm cho người đi mô tô, xe máy hoặc đội mũ bảo hiểm nhưng không cài quai đúng quy cách",
+    "exception": "Trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, hoặc người có hành vi vi phạm pháp luật",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.2",
+      "point_id": "7.2.i",
+      "label": "i",
+      "content": "Chở người ngồi trên xe không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;"
+    },
+    "sample_id": 35
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe thực hiện chuyển hướng mà không quan sát, không bảo đảm khoảng cách an toàn với xe phía sau, không giảm tốc độ, không có tín hiệu báo hướng rẽ hoặc có tín hiệu nhưng không sử dụng liên tục, nhưng lại điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng",
+    "exception": "điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.3",
+      "point_id": "7.3.a",
+      "label": "a",
+      "content": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức); điều khiển xe rẽ trái tại nơi có biển báo hiệu có nội dung cấm rẽ trái đối với loại phương tiện đang điều khiển; điều khiển xe rẽ phải tại nơi có biển báo hiệu có nội dung cấm rẽ phải đối với loại phương tiện đang điều khiển;"
+    },
+    "sample_id": 36
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người đang điều khiển xe sử dụng thiết bị trợ thính để nghe âm thanh, thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh, dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác.",
+    "exception": "trừ thiết bị trợ thính",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.4",
+      "point_id": "7.4.đ",
+      "label": "đ",
+      "content": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác."
+    },
+    "sample_id": 37
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp đi vào khu vực cấm có biển báo cấm đi vào đối với loại phương tiện đang điều khiển, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+    "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.6",
+      "point_id": "7.6.b",
+      "label": "b",
+      "content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm a, điểm b khoản 7 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "sample_id": 38
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe điều khiển xe đi trên vỉa hè để vào nhà hoặc cơ quan, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "điều khiển xe đi trên vỉa hè",
+    "exception": "điều khiển xe đi qua vỉa hè để vào nhà, cơ quan",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.7",
+      "point_id": "7.7.a",
+      "label": "a",
+      "content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan;"
+    },
+    "sample_id": 39
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe đang thực hiện công việc quản lý, bảo trì đường cao tốc và điều khiển xe vào đường cao tốc, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe đi vào đường cao tốc",
+    "exception": "xe phục vụ việc quản lý, bảo trì đường cao tốc",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.7",
+      "point_id": "7.7.b",
+      "label": "b",
+      "content": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;"
+    },
+    "sample_id": 40
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người lái xe ngồi phía trước để điều khiển xe và trong xe có trẻ em dưới 06 tuổi ngồi phía trước, thì theo quy định pháp luật, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe",
+    "exception": "chở trẻ em dưới 06 tuổi ngồi phía trước",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.9",
+      "point_id": "7.9.h",
+      "label": "h",
+      "content": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe, trừ trường hợp chở trẻ em dưới 06 tuổi ngồi phía trước;"
+    },
+    "sample_id": 41
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người điều khiển xe thành đoàn gây cản trở giao thông nhưng đã được cơ quan có thẩm quyền cấp phép, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe thành đoàn gây cản trở giao thông",
+    "exception": "trường hợp được cơ quan có thẩm quyền cấp phép",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.9",
+      "point_id": "7.9.i",
+      "label": "i",
+      "content": "Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;"
+    },
+    "sample_id": 42
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang đi làm nhiệm vụ theo quy định sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư hoặc khu vực cơ sở khám bệnh, chữa bệnh, theo quy định này trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+    "exception": "các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+    "source": {
+      "article_id": 7,
+      "clause_id": "7.9",
+      "point_id": "7.9.k",
+      "label": "k",
+      "content": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định."
+    },
+    "sample_id": 43
+  },
+  {
+    "question_type": "exception",
+    "question": "Theo quy định pháp luật, nếu người lái xe dừng hoặc đỗ xe trên cầu khi đã được tổ chức giao thông cho phép, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Dừng xe, đỗ xe trên cầu",
+    "exception": "trường hợp tổ chức giao thông cho phép",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.2",
+      "point_id": "8.2.b",
+      "label": "b",
+      "content": "Dừng xe, đỗ xe tại các vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu (trừ trường hợp tổ chức giao thông cho phép), gầm cầu vượt (trừ những nơi cho phép dừng xe, đỗ xe), song song với một xe khác đang dừng, đỗ; nơi đường bộ giao nhau hoặc trong phạm vi 05 mét tính từ mép đường giao nhau; điểm đón, trả khách; trước cổng hoặc trong phạm vi 05 mét hai bên cổng trụ sở cơ quan, tổ chức có bố trí đường cho xe ra, vào; nơi phần đường có bề rộng chỉ đủ cho một làn xe cơ giới; che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông; nơi mở dải phân cách giữa; cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đường có một làn xe cơ giới trên một chiều đường, trừ hành vi vi phạm quy định tại điểm b khoản 6 Điều này;"
+    },
+    "sample_id": 44
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu người lái xe rời vị trí lái và tắt máy khi dừng xe chỉ để đóng, mở cửa xe, xếp dỡ hàng hóa hoặc kiểm tra kỹ thuật xe, thì theo quy định trên, hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "rời vị trí lái, tắt máy khi dừng xe",
+    "exception": "rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.2",
+      "point_id": "8.2.c",
+      "label": "c",
+      "content": "Dừng xe, đỗ xe ở lòng đường trái quy định; dừng xe, đỗ xe trên đường dành riêng cho xe buýt, trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước, trên phần đường dành cho người đi bộ qua đường; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe) hoặc rời vị trí lái khi dừng xe nhưng không sử dụng phanh đỗ xe (hoặc thực hiện biện pháp an toàn khác); mở cửa xe, để cửa xe mở không bảo đảm an toàn;"
+    },
+    "sample_id": 45
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ theo quy định sử dụng còi liên tục khi gặp người đi bộ trên đoạn đường qua khu dân cư, thì theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường, khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động, khi gặp xe đi ngược chiều, hoặc khi chuyển hướng xe tại nơi đường giao nhau.",
+    "exception": "trừ trường hợp dải phân cách có khả năng chống chói; trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.3",
+      "point_id": "8.3.b",
+      "label": "b",
+      "content": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
+    },
+    "sample_id": 46
+  },
+  {
+    "question_type": "exception",
+    "question": "Giả sử một người lái xe quay đầu xe trên phần đường dành cho người đi bộ qua đường trên cầu, nhưng tại thời điểm đó có hiệu lệnh của người điều khiển giao thông (hoặc chỉ dẫn của biển báo hiệu tạm thời, hoặc tổ chức giao thông đã bố trí nơi quay đầu xe). Theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, ngầm, gầm cầu vượt",
+    "exception": "khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.4",
+      "point_id": "8.4.đ",
+      "label": "đ",
+      "content": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, ngầm, gầm cầu vượt, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe;"
+    },
+    "sample_id": 47
+  },
+  {
+    "question_type": "exception",
+    "question": "Theo quy định pháp luật, nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp vào khu vực cấm có biển báo cấm đi vào, thì hành vi này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+    "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.6",
+      "point_id": "8.6.d",
+      "label": "d",
+      "content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 7, điểm đ khoản 9 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "sample_id": 48
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp đi ngược chiều trên đường một chiều có biển “Cấm đi ngược chiều”, thì theo quy định này trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”.",
+    "exception": "Các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định.",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.7",
+      "point_id": "8.7.d",
+      "label": "d",
+      "content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ các hành vi vi phạm quy định tại điểm đ khoản 9 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "sample_id": 49
+  },
+  {
+    "question_type": "exception",
+    "question": "Theo quy định pháp luật, nếu người điều khiển một xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định để vào đường cao tốc, nhưng xe máy này là phương tiện hoặc thiết bị phục vụ việc quản lý, bảo trì đường cao tốc, thì có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Điều khiển xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc đi vào đường cao tốc",
+    "exception": "phương tiện, thiết bị phục vụ việc quản lý, bảo trì đường cao tốc",
+    "source": {
+      "article_id": 8,
+      "clause_id": "8.8",
+      "point_id": "8.8.b",
+      "label": "b",
+      "content": "Điều khiển xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc đi vào đường cao tốc, trừ phương tiện, thiết bị phục vụ việc quản lý, bảo trì đường cao tốc;"
+    },
+    "sample_id": 50
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe đạp, xe đạp máy hoặc xe xích lô chở quá số người quy định nhưng là người bệnh đi cấp cứu, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Xe đạp, xe đạp máy, xe xích lô chở quá số người quy định",
+    "exception": "trường hợp chở người bệnh đi cấp cứu",
+    "source": {
+      "article_id": 9,
+      "clause_id": "9.1",
+      "point_id": "9.1.o",
+      "label": "o",
+      "content": "Xe đạp, xe đạp máy, xe xích lô chở quá số người quy định, trừ trường hợp chở người bệnh đi cấp cứu;"
+    },
+    "sample_id": 51
+  },
+  {
+    "question_type": "exception",
+    "question": "Nếu một người lái xe đạp máy chở một trẻ em dưới 06 tuổi mà không đội mũ bảo hiểm hoặc không cài quai đúng quy cách, theo quy định pháp luật, trường hợp này có bị xử phạt không? Nếu có thì bị xử phạt như thế nào?",
+    "normal_action": "Chở người ngồi trên xe đạp máy không đội mũ bảo hiểm cho người đi mô tô, xe máy hoặc đội mũ bảo hiểm không cài quai đúng quy cách.",
+    "exception": "trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật.",
+    "source": {
+      "article_id": 9,
+      "clause_id": "9.4",
+      "point_id": "9.4.đ",
+      "label": "đ",
+      "content": "Chở người ngồi trên xe đạp máy không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật."
+    },
+    "sample_id": 52
   }
 ]

@@ -1,3 +1,4 @@
+import argparse
 import json
 import time
 from pathlib import Path
@@ -17,7 +18,7 @@ OUTPUT_FILE = Path(
     "output_generate/exception_questions.json"
 )
 
-TARGET_SAMPLES = 100
+DEFAULT_TARGET_SAMPLES = 100
 
 SLEEP_SECONDS = 10
 
@@ -502,7 +503,8 @@ def build_sample(
 # ============================================================
 
 def generate_dataset(
-    points
+    points,
+    num_samples=DEFAULT_TARGET_SAMPLES
 ):
 
     # ==========================================
@@ -511,7 +513,7 @@ def generate_dataset(
 
     dataset = load_existing_dataset()
 
-    if len(dataset) >= TARGET_SAMPLES:
+    if len(dataset) >= num_samples:
 
         print(
             f"Dataset already has "
@@ -519,7 +521,7 @@ def generate_dataset(
         )
 
         return dataset[
-            :TARGET_SAMPLES
+            :num_samples
         ]
 
     # ==========================================
@@ -592,7 +594,7 @@ def generate_dataset(
 
     for point in candidates:
 
-        if len(dataset) >= TARGET_SAMPLES:
+        if len(dataset) >= num_samples:
 
             break
 
@@ -607,7 +609,7 @@ def generate_dataset(
 
         print(
             f"Current dataset: "
-            f"{len(dataset)}/{TARGET_SAMPLES}"
+            f"{len(dataset)}/{num_samples}"
         )
 
         print(
@@ -717,7 +719,7 @@ def generate_dataset(
         # SLEEP
         # ======================================
 
-        if len(dataset) < TARGET_SAMPLES:
+        if len(dataset) < num_samples:
 
             print(
                 f"\nSleeping "
@@ -746,6 +748,26 @@ def generate_dataset(
 
 def main():
 
+    parser = argparse.ArgumentParser(
+        description=(
+            "Generate exception questions "
+            "from points.json"
+        )
+    )
+
+    parser.add_argument(
+        "-n",
+        "--num-samples",
+        type=int,
+        default=DEFAULT_TARGET_SAMPLES,
+        help=(
+            "Number of samples to generate "
+            f"(default: {DEFAULT_TARGET_SAMPLES})"
+        )
+    )
+
+    args = parser.parse_args()
+
     print(
         "=" * 70
     )
@@ -756,6 +778,11 @@ def main():
 
     print(
         "=" * 70
+    )
+
+    print(
+        f"Target samples: "
+        f"{args.num_samples}"
     )
 
     # ==========================================
@@ -775,7 +802,8 @@ def main():
     # ==========================================
 
     dataset = generate_dataset(
-        points
+        points,
+        num_samples=args.num_samples
     )
 
     print(

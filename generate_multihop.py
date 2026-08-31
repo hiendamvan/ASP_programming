@@ -19,7 +19,7 @@ OUTPUT_FILE = Path(
     "output_generate/multihop_questions.json"
 )
 
-TARGET_SAMPLES = 100
+TARGET_SAMPLES = 600
 SLEEP_SECONDS = 10
 
 
@@ -352,7 +352,7 @@ def get_supplementary_penalties(
 # SYSTEM PROMPT
 # ============================================================
 
-SYSTEM_PROMPT = """
+SYSTEM_PROMPT_2 = """
 Bạn là chuyên gia pháp luật giao thông Việt Nam.
 
 Nhiệm vụ:
@@ -480,125 +480,263 @@ Không thêm explanation.
 Không thêm markdown.
 """
 
+SYSTEM_PROMPT_3 = """
+Bạn là chuyên gia pháp luật giao thông Việt Nam.
+
+Nhiệm vụ:
+
+Cho trước BA quy định pháp luật thuộc CÙNG MỘT ĐIỀU.
+
+Hãy sinh một câu hỏi dạng MULTIHOP.
+
+==================================================
+MỤC TIÊU
+==================================================
+
+Câu hỏi phải yêu cầu người trả lời kết hợp
+thông tin từ BA quy định để đưa ra câu trả lời.
+
+Không được chỉ đơn giản hỏi:
+
+"X, Y và Z bị phạt bao nhiêu?"
+
+Mà phải tạo một tình huống có ba hành vi
+hoặc ba điều kiện liên quan.
+
+Người trả lời phải xác định được:
+
+1. Hành vi thứ nhất.
+2. Hành vi thứ hai.
+3. Hành vi thứ ba.
+4. Mức xử phạt tương ứng cho từng hành vi.
+5. Kết luận tổng hợp.
+
+==================================================
+QUY TẮC
+==================================================
+
+1. Ba quy định bắt buộc thuộc CÙNG MỘT ĐIỀU.
+
+2. Chỉ sử dụng thông tin có trong input.
+
+3. Không tự thêm tình tiết pháp lý.
+
+4. Không tự suy đoán hình phạt bổ sung.
+
+5. Mức phạt tiền phải lấy trực tiếp từ
+   quy định được cung cấp.
+
+6. Không cộng các mức phạt thành một
+   mức phạt tổng nếu pháp luật không nói như vậy.
+
+7. Mỗi hành vi là một atomic rule.
+
+8. Câu hỏi phải có tính kết hợp:
+   người đọc cần xác định cả ba hành vi
+   trước khi đưa ra kết luận.
+
+9. Câu hỏi cuối cùng phải yêu cầu:
+
+   "Theo quy định pháp luật, trường hợp này
+   bị xử phạt như thế nào?"
+
+10. Không đưa mức phạt vào question.
+
+==================================================
+RUBRIC
+==================================================
+
+Rubric phải là atomic.
+
+R1:
+Kiểm tra câu trả lời có xác định đúng
+và xử lý đúng quy định thứ nhất.
+
+R2:
+Kiểm tra câu trả lời có xác định đúng
+và xử lý đúng quy định thứ hai.
+
+R3:
+Kiểm tra câu trả lời có xác định đúng
+và xử lý đúng quy định thứ ba.
+
+R4:
+Kiểm tra câu trả lời có đưa ra kết luận
+tổng hợp đầy đủ cho tình huống hay không.
+
+==================================================
+OUTPUT
+==================================================
+
+Chỉ trả về JSON.
+
+Schema:
+
+{
+    "question_type": "multihop",
+
+    "question": "...",
+
+    "rubrics": [
+
+        {
+            "rule_id": "R1",
+
+            "action": "...",
+
+            "fine_min": 0,
+
+            "fine_max": 0
+        },
+
+        {
+            "rule_id": "R2",
+
+            "action": "...",
+
+            "fine_min": 0,
+
+            "fine_max": 0
+        },
+
+        {
+            "rule_id": "R3",
+
+            "action": "...",
+
+            "fine_min": 0,
+
+            "fine_max": 0
+        },
+
+        {
+            "rule_id": "R4",
+
+            "action": "combined_conclusion"
+        }
+
+    ]
+}
+
+Không thêm explanation.
+
+Không thêm markdown.
+"""
+
 
 # ============================================================
 # GENERATE MULTIHOP
 # ============================================================
 
 def generate_multihop(
-    point_1,
-    point_2
+    point_list
 ):
 
-    article_id_1 = get_article_id(
-        point_1
-    )
+    num_points = len(point_list)
 
-    article_id_2 = get_article_id(
-        point_2
-    )
-
-    # --------------------------------------------------------
-    # Safety check
-    # --------------------------------------------------------
-
-    if article_id_1 != article_id_2:
+    if num_points not in (2, 3):
 
         raise ValueError(
-            "Multihop requires two points "
+            "Multihop requires 2 or 3 points."
+        )
+
+    # --------------------------------------------------------
+    # Safety check: all points same article
+    # --------------------------------------------------------
+
+    article_ids = [
+        get_article_id(p)
+        for p in point_list
+    ]
+
+    if len(set(article_ids)) != 1:
+
+        raise ValueError(
+            "Multihop requires points "
             "from the same article."
         )
 
-    context_1 = build_point_context(
-        point_1
-    )
+    article_id = article_ids[0]
 
-    context_2 = build_point_context(
-        point_2
-    )
+    contexts = [
+        build_point_context(p)
+        for p in point_list
+    ]
 
     article = get_article_metadata(
-        article_id_1
+        article_id
     )
 
     # --------------------------------------------------------
     # USER PROMPT
     # --------------------------------------------------------
 
+    quy_dinh_blocks = []
+
+    for i, ctx in enumerate(
+        contexts,
+        start=1
+    ):
+
+        block = f"""
+============================================================
+QUY ĐỊNH {i}
+============================================================
+
+ARTICLE:
+
+{json.dumps(
+    ctx["article"],
+    ensure_ascii=False,
+    indent=2
+)}
+
+CLAUSE:
+
+{json.dumps(
+    ctx["clause"],
+    ensure_ascii=False,
+    indent=2
+)}
+
+POINT:
+
+{json.dumps(
+    ctx["point"],
+    ensure_ascii=False,
+    indent=2
+)}
+"""
+
+        quy_dinh_blocks.append(block)
+
+    so_hanh_vi = (
+        "hai" if num_points == 2
+        else "ba"
+    )
+
+    so_quy_dinh = (
+        "hai" if num_points == 2
+        else "ba"
+    )
+
     user_prompt = f"""
-ĐIỀU {article_id_1}
+ĐIỀU {article_id}
 
 TÊN ĐIỀU:
 
 {article.get("name", article.get("title", ""))}
 
-
-============================================================
-QUY ĐỊNH 1
-============================================================
-
-ARTICLE:
-
-{json.dumps(
-    context_1["article"],
-    ensure_ascii=False,
-    indent=2
-)}
-
-CLAUSE:
-
-{json.dumps(
-    context_1["clause"],
-    ensure_ascii=False,
-    indent=2
-)}
-
-POINT:
-
-{json.dumps(
-    context_1["point"],
-    ensure_ascii=False,
-    indent=2
-)}
-
-
-============================================================
-QUY ĐỊNH 2
-============================================================
-
-ARTICLE:
-
-{json.dumps(
-    context_2["article"],
-    ensure_ascii=False,
-    indent=2
-)}
-
-CLAUSE:
-
-{json.dumps(
-    context_2["clause"],
-    ensure_ascii=False,
-    indent=2
-)}
-
-POINT:
-
-{json.dumps(
-    context_2["point"],
-    ensure_ascii=False,
-    indent=2
-)}
-
+{"".join(quy_dinh_blocks)}
 
 ============================================================
 TASK
 ============================================================
 
 Hãy tạo MỘT câu hỏi MULTIHOP dựa trên
-hai quy định trên.
+{so_quy_dinh} quy định trên.
 
-Tạo một tình huống trong đó hai hành vi
+Tạo một tình huống trong đó {so_hanh_vi} hành vi
 cùng xảy ra.
 
 Câu hỏi phải kết thúc bằng yêu cầu:
@@ -611,11 +749,17 @@ Không đưa mức phạt vào câu hỏi.
 Chỉ trả về JSON.
 """
 
+    system_prompt = (
+        SYSTEM_PROMPT_2
+        if num_points == 2
+        else SYSTEM_PROMPT_3
+    )
+
     messages = [
 
         {
             "role": "system",
-            "content": SYSTEM_PROMPT
+            "content": system_prompt
         },
 
         {
@@ -665,7 +809,8 @@ Chỉ trả về JSON.
 # ============================================================
 
 def validate_generated(
-    generated
+    generated,
+    num_points
 ):
 
     if not isinstance(
@@ -698,8 +843,6 @@ def validate_generated(
 
         return False
 
-    # Phải có tối thiểu R1, R2, R3
-
     rule_ids = {
 
         r.get("rule_id")
@@ -707,10 +850,15 @@ def validate_generated(
         for r in rubrics
     }
 
+    # 2 points: R1, R2, R3
+    # 3 points: R1, R2, R3, R4
+
     required = {
-        "R1",
-        "R2",
-        "R3"
+        f"R{i}"
+        for i in range(
+            1,
+            num_points + 2
+        )
     }
 
     if not required.issubset(
@@ -728,95 +876,49 @@ def validate_generated(
 
 def enrich_with_metadata(
     generated,
-    point_1,
-    point_2
+    point_list
 ):
 
     article_id = get_article_id(
-        point_1
+        point_list[0]
     )
 
-    # --------------------------------------------------------
-    # Source 1
-    # --------------------------------------------------------
-
-    clause_1 = str(
-        point_1["clause_id"]
-    ).split(".")[-1]
-
-    point_id_1 = point_1.get(
-        "label"
-    )
-
-    # --------------------------------------------------------
-    # Source 2
-    # --------------------------------------------------------
-
-    clause_2 = str(
-        point_2["clause_id"]
-    ).split(".")[-1]
-
-    point_id_2 = point_2.get(
-        "label"
-    )
-
-    # --------------------------------------------------------
-    # Query supplementary penalties
-    # --------------------------------------------------------
-
-    penalties_1 = (
-        get_supplementary_penalties(
-            article_id,
-            clause_1,
-            point_id_1
-        )
-    )
-
-    penalties_2 = (
-        get_supplementary_penalties(
-            article_id,
-            clause_2,
-            point_id_2
-        )
-    )
-
-    # --------------------------------------------------------
-    # Add source
-    # --------------------------------------------------------
-
-    generated["sources"] = [
-
-        {
-            "article_id": article_id,
-
-            "clause_id": clause_1,
-
-            "point_id": point_id_1
-        },
-
-        {
-            "article_id": article_id,
-
-            "clause_id": clause_2,
-
-            "point_id": point_id_2
-        }
-
-    ]
-
-    # --------------------------------------------------------
-    # Supplementary penalties
-    # --------------------------------------------------------
-
+    sources = []
     supplementary = []
 
-    supplementary.extend(
-        penalties_1
-    )
+    for point in point_list:
 
-    supplementary.extend(
-        penalties_2
-    )
+        clause_num = str(
+            point["clause_id"]
+        ).split(".")[-1]
+
+        point_label = point.get(
+            "label"
+        )
+
+        sources.append(
+            {
+                "article_id": article_id,
+
+                "clause_id": clause_num,
+
+                "point_id": point_label
+            }
+        )
+
+        penalties = (
+            get_supplementary_penalties(
+                article_id,
+                clause_num,
+                point_label
+            )
+        )
+
+        supplementary.extend(
+            penalties
+        )
+
+    generated["sources"] = sources
 
     generated[
         "supplementary_penalties"
@@ -895,11 +997,11 @@ def load_existing_dataset():
 # GET EXISTING PAIRS
 # ============================================================
 
-def get_existing_pairs(
+def get_existing_groups(
     dataset
 ):
 
-    existing_pairs = set()
+    existing = set()
 
     for sample in dataset:
 
@@ -908,7 +1010,7 @@ def get_existing_pairs(
             []
         )
 
-        if len(sources) != 2:
+        if len(sources) < 2:
 
             continue
 
@@ -940,24 +1042,44 @@ def get_existing_pairs(
                 key
             )
 
-        pair = tuple(
+        group = tuple(
             sorted(keys)
         )
 
-        existing_pairs.add(
-            pair
+        existing.add(
+            group
         )
 
-    return existing_pairs
+    return existing
 
 
 # ============================================================
 # BUILD PAIRS
 # ============================================================
 
-def build_candidate_pairs(
+def make_point_key(
+    article_id,
+    point
+):
+
+    return (
+
+        article_id,
+
+        str(
+            point["clause_id"]
+        ).split(".")[-1],
+
+        str(
+            point.get("label")
+        )
+
+    )
+
+
+def build_candidate_groups(
     points,
-    existing_pairs
+    existing_groups
 ):
 
     grouped = (
@@ -966,7 +1088,7 @@ def build_candidate_pairs(
         )
     )
 
-    pairs = []
+    candidates = []
 
     for article_id, article_points in grouped.items():
 
@@ -974,72 +1096,100 @@ def build_candidate_pairs(
 
             continue
 
+        n = len(article_points)
+
         # ----------------------------------------------------
-        # All pairs inside same article
+        # All pairs (2-point groups)
         # ----------------------------------------------------
 
-        for i in range(
-            len(article_points)
-        ):
+        for i in range(n):
 
             for j in range(
                 i + 1,
-                len(article_points)
+                n
             ):
 
-                p1 = article_points[i]
-
-                p2 = article_points[j]
-
-                key_1 = (
-
-                    article_id,
-
-                    str(
-                        p1["clause_id"]
-                    ).split(".")[-1],
-
-                    str(
-                        p1.get("label")
-                    )
-
-                )
-
-                key_2 = (
-
-                    article_id,
-
-                    str(
-                        p2["clause_id"]
-                    ).split(".")[-1],
-
-                    str(
-                        p2.get("label")
-                    )
-
-                )
-
-                pair = tuple(
+                group_keys = tuple(
                     sorted(
                         [
-                            key_1,
-                            key_2
+                            make_point_key(
+                                article_id,
+                                article_points[i]
+                            ),
+
+                            make_point_key(
+                                article_id,
+                                article_points[j]
+                            )
                         ]
                     )
                 )
 
-                if pair in existing_pairs:
+                if group_keys in existing_groups:
 
                     continue
 
-                pairs.append(
-                    (
-                        p1,
-                        p2
-                    )
+                candidates.append(
+                    [
+                        article_points[i],
+                        article_points[j]
+                    ]
                 )
 
-    return pairs
+        # ----------------------------------------------------
+        # All triples (3-point groups)
+        # ----------------------------------------------------
+
+        if n < 3:
+
+            continue
+
+        for i in range(n):
+
+            for j in range(
+                i + 1,
+                n
+            ):
+
+                for k in range(
+                    j + 1,
+                    n
+                ):
+
+                    group_keys = tuple(
+                        sorted(
+                            [
+                                make_point_key(
+                                    article_id,
+                                    article_points[i]
+                                ),
+
+                                make_point_key(
+                                    article_id,
+                                    article_points[j]
+                                ),
+
+                                make_point_key(
+                                    article_id,
+                                    article_points[k]
+                                )
+                            ]
+                        )
+                    )
+
+                    if group_keys in existing_groups:
+
+                        continue
+
+                    candidates.append(
+                        [
+                            article_points[i],
+                            article_points[j],
+                            article_points[k]
+                        ]
+                    )
+
+    return candidates
 
 
 # ============================================================
@@ -1075,32 +1225,32 @@ def generate_dataset(
         ]
 
     # --------------------------------------------------------
-    # Existing pairs
+    # Existing groups
     # --------------------------------------------------------
 
-    existing_pairs = (
-        get_existing_pairs(
+    existing_groups = (
+        get_existing_groups(
             dataset
         )
     )
 
     print(
-        f"Existing pairs: "
-        f"{len(existing_pairs)}"
+        f"Existing groups: "
+        f"{len(existing_groups)}"
     )
 
     # --------------------------------------------------------
-    # Candidate pairs
+    # Candidate groups
     # --------------------------------------------------------
 
-    pairs = build_candidate_pairs(
+    candidates = build_candidate_groups(
         points,
-        existing_pairs
+        existing_groups
     )
 
     print(
-        f"Available new pairs: "
-        f"{len(pairs)}"
+        f"Available new groups: "
+        f"{len(candidates)}"
     )
 
     # --------------------------------------------------------
@@ -1108,7 +1258,7 @@ def generate_dataset(
     # --------------------------------------------------------
 
     random.shuffle(
-        pairs
+        candidates
     )
 
     remaining = (
@@ -1116,24 +1266,21 @@ def generate_dataset(
         - len(dataset)
     )
 
-    pairs = pairs[
+    candidates = candidates[
         :remaining
     ]
 
     print(
         f"Will generate: "
-        f"{len(pairs)} samples"
+        f"{len(candidates)} samples"
     )
 
     # --------------------------------------------------------
     # Generate
     # --------------------------------------------------------
 
-    for idx, (
-        point_1,
-        point_2
-    ) in enumerate(
-        pairs,
+    for idx, point_list in enumerate(
+        candidates,
         start=1
     ):
 
@@ -1148,15 +1295,15 @@ def generate_dataset(
             f"/{num_samples}"
         )
 
-        print(
-            f"Point 1: "
-            f"{point_1['point_id']}"
-        )
+        for pi, p in enumerate(
+            point_list,
+            start=1
+        ):
 
-        print(
-            f"Point 2: "
-            f"{point_2['point_id']}"
-        )
+            print(
+                f"Point {pi}: "
+                f"{p['point_id']}"
+            )
 
         try:
 
@@ -1166,8 +1313,7 @@ def generate_dataset(
 
             generated = (
                 generate_multihop(
-                    point_1,
-                    point_2
+                    point_list
                 )
             )
 
@@ -1176,7 +1322,8 @@ def generate_dataset(
             # ================================================
 
             if not validate_generated(
-                generated
+                generated,
+                len(point_list)
             ):
 
                 print(
@@ -1193,8 +1340,7 @@ def generate_dataset(
             generated = (
                 enrich_with_metadata(
                     generated,
-                    point_1,
-                    point_2
+                    point_list
                 )
             )
 
@@ -1249,7 +1395,7 @@ def generate_dataset(
         # ----------------------------------------------------
 
         if (
-            idx < len(pairs)
+            idx < len(candidates)
             and len(dataset)
             < num_samples
         ):
