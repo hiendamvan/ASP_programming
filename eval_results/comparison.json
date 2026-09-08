@@ -1,0 +1,204 @@
+{
+  "input": "eval_set/judged_both.json",
+  "n_samples": 99,
+  "overall": {
+    "llm": {
+      "n": 99,
+      "skipped": 0,
+      "tp": 44,
+      "fp": 0,
+      "tn": 44,
+      "fn": 11,
+      "accuracy": 0.8888888888888888,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "false_accept_rate": 0.2
+    },
+    "asp": {
+      "n": 99,
+      "skipped": 0,
+      "tp": 55,
+      "fp": 0,
+      "tn": 44,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_accept_rate": 0.0
+    }
+  },
+  "per_perturbation": {
+    "llm": {
+      "confident_wrong": [
+        22,
+        22
+      ],
+      "correct": [
+        23,
+        23
+      ],
+      "drop_revocation": [
+        0,
+        1
+      ],
+      "exception_ignored": [
+        12,
+        12
+      ],
+      "fine_partial": [
+        0,
+        10
+      ],
+      "fine_shift": [
+        10,
+        10
+      ],
+      "verbose_correct": [
+        21,
+        21
+      ]
+    },
+    "asp": {
+      "confident_wrong": [
+        22,
+        22
+      ],
+      "correct": [
+        23,
+        23
+      ],
+      "drop_revocation": [
+        1,
+        1
+      ],
+      "exception_ignored": [
+        12,
+        12
+      ],
+      "fine_partial": [
+        10,
+        10
+      ],
+      "fine_shift": [
+        10,
+        10
+      ],
+      "verbose_correct": [
+        21,
+        21
+      ]
+    }
+  },
+  "per_question_type": {
+    "llm": {
+      "exception": [
+        48,
+        48
+      ],
+      "simple": [
+        40,
+        51
+      ]
+    },
+    "asp": {
+      "exception": [
+        48,
+        48
+      ],
+      "simple": [
+        51,
+        51
+      ]
+    }
+  },
+  "hallucinated_figures": {
+    "checked": 99,
+    "flagged": 9,
+    "examples": [
+      {
+        "eval_id": "simple-1-fine_shift",
+        "invented": [
+          "3.000.000",
+          "4.000.000"
+        ],
+        "rationale": "Câu trả lời không khớp với mức phạt quy định trong rubric (3.000.000 - 4.000.000 đồng) mà đưa ra mức 4.500.000 - 8.000.000 đồng, sai hoàn toàn."
+      },
+      {
+        "eval_id": "simple-2-fine_partial",
+        "invented": [
+          "10.000.000"
+        ],
+        "rationale": "Câu trả lời đúng hướng, nêu mức phạt tiền nhưng chỉ đưa ra một mức cụ thể (5.000.000 đồng) thay vì nêu khoảng từ 5.000.000 đến 10.000.000 đồng như rubric yêu cầu, thiếu chi tiết quan trọng."
+      },
+      {
+        "eval_id": "simple-3-fine_shift",
+        "invented": [
+          "4.000.000"
+        ],
+        "rationale": "Câu trả lời chỉ đúng một phần: mức phạt tối thiểu 6.000.000 đồng đúng, nhưng mức tối đa được nêu là 12.000.000 đồng, không khớp với rubric (4.000.000 - 6.000.000 đồng). Do sai lệch quan trọng nên điểm"
+      },
+      {
+        "eval_id": "simple-4-fine_shift",
+        "invented": [
+          "1.000.000",
+          "800.000"
+        ],
+        "rationale": "Câu trả lời không khớp với mức phạt quy định trong rubric (800.000 - 1.000.000 đồng) mà đưa ra mức 1.200.000 - 2.000.000 đồng, sai hoàn toàn."
+      },
+      {
+        "eval_id": "simple-4-fine_partial",
+        "invented": [
+          "1.000.000"
+        ],
+        "rationale": "Câu trả lời đúng hướng, nêu mức phạt tiền nhưng chỉ đưa ra mức 800.000 đồng mà không nêu khoảng từ 800.000 đến 1.000.000 đồng như rubric yêu cầu, thiếu chi tiết quan trọng."
+      },
+      {
+        "eval_id": "simple-4-confident_wrong",
+        "invented": [
+          "1.000.000",
+          "800.000"
+        ],
+        "rationale": "Câu trả lời hoàn toàn sai về cơ sở pháp lý và mức phạt, không khớp với yêu cầu rubric (800.000‑1.000.000 đồng)."
+      },
+      {
+        "eval_id": "simple-8-fine_shift",
+        "invented": [
+          "13.000.000",
+          "15.000.000"
+        ],
+        "rationale": "Câu trả lời đưa ra mức phạt không khớp với rubric (13.000.000 - 15.000.000 đồng), sai lệch đáng kể."
+      },
+      {
+        "eval_id": "simple-9-fine_partial",
+        "invented": [
+          "6.000.000"
+        ],
+        "rationale": "Câu trả lời đúng yêu cầu, đưa ra mức phạt nằm trong khoảng 5.000.000 - 6.000.000 đồng, không thiếu chi tiết quan trọng."
+      },
+      {
+        "eval_id": "simple-9-confident_wrong",
+        "invented": [
+          "5.000.000",
+          "6.000.000"
+        ],
+        "rationale": "Câu trả lời hoàn toàn sai: không đưa ra mức phạt 5.000.000‑6.000.000 đồng như rubric, mà đưa ra mức 15.000.000‑18.000.000 đồng và trích dẫn điều khoản không liên quan. Do đó sai cơ bản."
+      }
+    ]
+  },
+  "determinism": {
+    "llm": null,
+    "asp": null
+  },
+  "cost": {
+    "llm_judge_api_calls": 99,
+    "asp_extract_api_calls": 2,
+    "asp_solve_seconds_total": 0.4604150000000003,
+    "asp_extract_method": {
+      "regex-fallback": 97,
+      "llm": 2
+    }
+  },
+  "disagreements": 11
+}

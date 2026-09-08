@@ -33,7 +33,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 1
+    "sample_id": 1,
+    "model_answer": "Vi phạm không bật đèn chiếu sáng trong điều kiện sương mù (theo 7.1.g): phạt tiền 200.000 – 400.000 đồng.  \n\nCác hành vi quy định tại điểm b khoản 3; khoản 5; điểm b, c, d khoản 6; điểm a khoản 7 (theo 7.13.a) đều bị trừ 02 điểm giấy phép lái xe.  \n\nNếu các hành vi trên (khoản 3, 5, 6, 7) có quy định mức phạt tiền riêng, thông tin chi tiết chưa được cung cấp; cần tra cứu các khoản quy định tương ứng để xác định mức phạt tiền và các hình thức xử phạt bổ sung (nếu có).",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -69,7 +71,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 2
+    "sample_id": 2,
+    "model_answer": "Hành vi 1: Không bật đèn chiếu sáng đủ sáng từ 18 h đến 06 h → phạt tiền 800.000 – 1.000.000 đồng (theo quy định 8.3.c).  \nHành vi 2: Lùi xe trên đường một chiều có biển “Cấm đi ngược chiều”, khu vực cấm dừng, không quan sát hai bên → phạt tiền 1.000.000 – 2.000.000 đồng (theo quy định 8.4.e).  \nKhông có quy định trừ điểm, tước quyền sử dụng giấy phép lái xe, tịch thu phương tiện hoặc biện pháp khắc phục hậu quả cho các hành vi trên trong Nghị định 168/2024/NĐ‑CP.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -105,7 +109,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 3
+    "sample_id": 3,
+    "model_answer": "- Vi phạm 1: Dừng xe trong hầm đường bộ không bật đèn khẩn cấp, không đặt biển “Chú ý xe đỗ”.  \n  - Phạt tiền: 2.000.000 – 3.000.000 đồng.  \n  - Không có điểm phạt, không có hình thức xử phạt bổ sung, không có biện pháp khắc phục hậu quả khác.\n\n- Vi phạm 2: Không nhường đường cho xe cứu thương đang phát tín hiệu ưu tiên.  \n  - Phạt tiền: 3.000.000 – 5.000.000 đồng.  \n  - Không có điểm phạt, không có hình thức xử phạt bổ sung, không có biện pháp khắc phục hậu quả khác.\n\n**Tổng mức phạt tối thiểu:** 5.000.000 đồng.  \n**Tổng mức phạt tối đa:** 8.000.000 đồng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -141,7 +147,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 4
+    "sample_id": 4,
+    "model_answer": "Vi phạm 1: Chở người trên xe kéo (trừ người điều khiển) – Điều 6.3.i  \n- Phạt tiền: 800.000 – 1.000.000 đồng  \n- Trừ điểm: 6 điểm giấy phép lái xe  \n\nVi phạm 2: Vượt xe trái phép trên đoạn có biển cấm vượt – Điều 6.5.a  \n- Phạt tiền: 4.000.000 – 6.000.000 đồng  \n- Trừ điểm: 6 điểm giấy phép lái xe  \n\nKhông có hình thức xử phạt bổ sung hay biện pháp khắc phục hậu quả khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -177,7 +185,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 5
+    "sample_id": 5,
+    "model_answer": "**1. Vi phạm các điểm g, h khoản 8; c khoản 12; d khoản 13 của Điều 32.18**  \n- Phạt tiền: mức tối thiểu – tối đa theo Nghị định 168/2024/NĐ‑CP (cần tra cứu cụ thể từng điểm).  \n- Trừ điểm: không quy định trong NĐ 168/2024/NĐ‑CP (không có điểm trừ).  \n- Xử phạt bổ sung: tịch thu biển số và tịch thu thiết bị thay đổi biển số (theo quy định 32.18.a).  \n\n**2. Vi phạm các điểm b khoản 3; b, c, h khoản 7; d, đ khoản 8; a khoản 12 của Điều 32.19**  \n- Phạt tiền: mức tối thiểu – tối đa theo Nghị định 168/2024/NĐ‑CP (cần tra cứu cụ thể từng điểm).  \n- Trừ điểm: không quy định trong NĐ 168/2024/NĐ‑CP (không có điểm trừ).  \n- Xử phạt bổ sung: không có (trừ trường hợp phương tiện bị tịch thu).  \n- Biện pháp khắc phục hậu quả: buộc thực hiện thủ tục đổi, thu hồi, cấp mới giấy đăng ký xe, biển số và giấy chứng nhận kiểm định an toàn kỹ thuật, môi trường (theo quy định 32.19.g).  \n\n**Tóm lại**  \n- Ông A sẽ bị phạt tiền (theo mức quy định cho từng điểm vi phạm),  \n- Đối với vi phạm 32.18: bị tịch thu biển số và thiết bị thay đổi biển số,  \n- Đối với vi phạm 32.19: phải thực hiện các thủ tục đổi, thu hồi, cấp mới giấy tờ liên quan.  \n\n*Lưu ý:* Mức phạt tiền cụ thể (tối thiểu – tối đa) cần tra cứu trong Nghị định 168/2024/NĐ‑CP cho từng mục vi phạm.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -222,7 +232,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 6
+    "sample_id": 6,
+    "model_answer": "Vi phạm: lắp thêm đèn chiếu sáng phía trước và trên nóc xe (không phải đèn sương mù dạng rời).  \n\n- Phạt tiền: từ 1.000.000 đ đến 2.000.000 đ.  \n- Trừ điểm giấy phép lái xe: 10 điểm.  \n- Không có hình thức xử phạt bổ sung hay biện pháp khắc phục hậu quả khác được quy định cho hành vi này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -258,7 +270,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 7
+    "sample_id": 7,
+    "model_answer": "- Phạt tiền: 10.000.000 – 20.000.000 đồng (theo khoản 39.4.i vì không lắp hoặc không vận hành hệ thống âm thanh công khai thông báo lỗi).  \n- Xử phạt bổ sung: đình chỉ tuyển sinh từ 01 tháng đến 03 tháng (theo khoản 39.9.a vì vi phạm các điểm a, b, d, đ, e, g của khoản 4 Điều 39.9).  \n- Không có hình phạt trừ điểm giấy phép lái xe, không có tước quyền sử dụng giấy phép, không có tịch thu phương tiện.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -294,7 +308,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 8
+    "sample_id": 8,
+    "model_answer": "Vi phạm 1: Lắp đặt, sử dụng thiết bị âm thanh, ánh sáng gây mất trật tự, an toàn giao thông (điều 32.3.c).  \n- Phạt tiền: 800.000 – 1.000.000 đồng (cá nhân) hoặc 1.600.000 – 2.000.000 đồng (tổ chức).  \n\nVi phạm 2: Cắt, hàn, tẩy xoá, đục sửa, đóng lại trái phép số khung, số động cơ và đưa xe đã sửa đổi tham gia giao thông (điều 32.17.a).  \n- Hình thức xử phạt bổ sung: tịch thu phương tiện.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -340,7 +356,9 @@
         "unit": "month"
       }
     ],
-    "sample_id": 9
+    "sample_id": 9,
+    "model_answer": "1. **Sử dụng đèn chiếu xa trong khu dân cư có hệ thống chiếu sáng đang hoạt động và không nhường đường cho xe đi ngược chiều**  \n   - Phạt tiền: 200.000 – 400.000 đồng.  \n   - Trừ điểm: 3 điểm (đèn chiếu xa) + 3 điểm (không nhường đường) = **6 điểm**.  \n   - Không có hình thức xử phạt bổ sung khác.\n\n2. **Lái xe có nồng độ cồn trong máu 85 mg/100 ml (>80 mg/100 ml)**  \n   - Phạt tiền: 8.000.000 – 10.000.000 đồng.  \n   - Trừ điểm: **6 điểm**.  \n   - Xử phạt bổ sung: tạm thời tước quyền sử dụng giấy phép lái xe **30 ngày** (theo Nghị định 168/2024/NĐ‑CP).  \n\n**Tổng cộng**: phạt tiền từ 8.200.000 đ đến 10.400.000 đồng; trừ **12 điểm**; tước quyền lái xe 30 ngày.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -376,7 +394,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 10
+    "sample_id": 10,
+    "model_answer": "Vi phạm 1: Không nhường đường cho xe cứu thương đang phát tín hiệu ưu tiên  \n- Phạt tiền: 6.000.000 – 8.000.000 đồng  \n- Trừ điểm: 6 điểm giấy phép lái xe  \n\nVi phạm 2: Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông  \n- Phạt tiền: 18.000.000 – 20.000.000 đồng  \n- Trừ điểm: 6 điểm giấy phép lái xe  \n\nTổng cộng (khi xử phạt đồng thời): phạt tiền 24.000.000 – 28.000.000 đồng, trừ 12 điểm giấy phép lái xe.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -421,7 +441,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 11
+    "sample_id": 11,
+    "model_answer": "Vi phạm: sử dụng tay cầm để nói chuyện điện thoại di động và đồng thời dùng thiết bị âm thanh cá nhân khi đang điều khiển xe máy.  \n\n- Phạt tiền: từ 800.000 đồng đến 1.000.000 đồng (theo khoản 7.4.đ).  \n- Trừ điểm: không có (không có quy định trừ điểm cho hành vi này).  \n- Xử phạt bổ sung: không áp dụng (không thuộc các trường hợp tước quyền sử dụng giấy phép lái xe).  \n- Biện pháp khắc phục hậu quả: không có.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -466,7 +488,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 12
+    "sample_id": 12,
+    "model_answer": "- **Vi phạm 1:** Đưa xe ô tô kinh doanh vận tải hành khách lắp thêm hoặc tháo bớt ghế, giường nằm hoặc thay đổi kích thước khoang hành lý không đúng với thông số kỹ thuật ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường.  \n  - **Hình phạt:** Phạt tiền cho tổ chức 20.000.000 – 24.000.000 đồng (theo mục 32.11.d).  \n  - **Điểm lái:** Không có trừ điểm (điểm chỉ áp dụng khi người điều khiển trực tiếp vi phạm).  \n\n- **Vi phạm 2:** Tự ý thay đổi tổng thành khung, tổng thành máy, và lắp đặt thêm cơ cấu nâng hạ thùng xe mà không có sự phê duyệt của cơ quan có thẩm quyền.  \n  - **Hình phạt:** Phạt tiền cho tổ chức 130.000.000 – 150.000.000 đồng (theo mục 32.16.c).  \n  - **Điểm lái:** Không có trừ điểm (điểm chỉ áp dụng khi người điều khiển trực tiếp vi phạm).  \n\n- **Kết luận:** Công ty sẽ bị xử phạt tiền tổng cộng từ 150.000.000 đồng đến 174.000.000 đồng, chia thành hai khoản tương ứng với mỗi hành vi vi phạm. Không có hình thức xử phạt bổ sung hay biện pháp khắc phục hậu quả khác được quy định trong các mục trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -502,7 +526,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 13
+    "sample_id": 13,
+    "model_answer": "Vi phạm 1 (6.2.c – không nhường đường tại ngã tư): phạt tiền từ 600.000 đ đến 800.000 đ.\n\nVi phạm 2 (6.5.l – không nhường quyền đi trước cho người đi bộ, xe lăn tại vạch dành cho người đi bộ): phạt tiền từ 4.000.000 đ đến 6.000.000 đ.\n\nHai hành vi được xử phạt riêng biệt; tổng số tiền phạt sẽ nằm trong khoảng 4.600.000 đ – 6.800.000 đ. Không có điểm phạt, tước quyền lái xe hay biện pháp khắc phục hậu quả khác được quy định cho các vi phạm này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -538,7 +564,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 14
+    "sample_id": 14,
+    "model_answer": "1. Vi phạm không đáp ứng điều kiện kinh doanh và gây tai nạn nghiêm trọng (hậu quả từ mức nghiêm trọng trở lên) → Điều 26.8.b: phạt tiền cho tổ chức 20.000.000 đ – 24.000.000 đ.  \n\n2. Vi phạm không cung cấp, cập nhật, truyền dẫn, lưu trữ, quản lý thông tin, dữ liệu thu thập từ thiết bị giám sát hành trình và thiết bị ghi hình người lái xe → Điều 26.13.d:  \n   - Ngoài hình thức xử phạt (mức phạt tiền không được nêu trong trích dẫn cung cấp, cần tra cứu điều khoản quy định mức phạt cho hành vi này),  \n   - Bổ sung biện pháp khắc phục hậu quả: phải thực hiện cung cấp, cập nhật, truyền dẫn, lưu trữ và quản lý đầy đủ thông tin, dữ liệu theo quy định.  \n\n*Thiếu thông tin*: mức phạt tiền cụ thể cho hành vi 2 (vi phạm quản lý dữ liệu) không có trong các quy định được trích dẫn; cần tham khảo điều khoản tương ứng trong Nghị định 168/2024/NĐ‑CP để xác định mức tối thiểu‑tối đa.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -591,7 +619,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 15
+    "sample_id": 15,
+    "model_answer": "Vi phạm 1: Điều khiển xe không đủ hệ thống phanh hoặc phanh không có tác dụng (theo quy định 13.5.b)  \n- Phạt tiền: từ 3.000.000 đ đến 4.000.000 đ.  \n- Không có quy định trừ điểm, tước quyền lái xe, tịch thu phương tiện hay biện pháp khắc phục hậu quả trong nội dung trích dẫn.\n\nVi phạm 2: Lắp đặt, sử dụng còi vượt quá âm lượng cho phép (theo quy định 13.5.d)  \n- Phạt tiền: từ 3.000.000 đ đến 4.000.000 đ.  \n- Không có quy định trừ điểm, tước quyền lái xe, tịch thu phương tiện hay biện pháp khắc phục hậu quả trong nội dung trích dẫn.\n\nTổng mức phạt tối thiểu: 6.000.000 đ; tối đa: 8.000.000 đ. (hai vi phạm tính riêng).",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -636,7 +666,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 16
+    "sample_id": 16,
+    "model_answer": "**Vi phạm 1 – Không bố trí người áp tải trên xe chở hàng nguy hiểm**  \n- Phạt tiền: 1.000.000 – 2.000.000 đồng (cá nhân) / 2.000.000 – 4.000.000 đồng (tổ chức kinh doanh vận tải).  \n- Không có điểm trừ, không có hình phạt bổ sung khác.\n\n**Vi phạm 2 – Không hiển thị đúng nội dung thông tin đã niêm yết trên xe**  \n- Phạt tiền: 5.000.000 – 6.000.000 đồng (cá nhân) / 10.000.000 – 12.000.000 đồng (tổ chức kinh doanh vận tải).  \n- Không có điểm trừ, không có hình phạt bổ sung khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -672,7 +704,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 17
+    "sample_id": 17,
+    "model_answer": "- Giáo viên dạy thực hành không mang theo giấy phép xe tập lái hoặc mang theo giấy phép đã hết hạn: phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng.\n\n- Trung tâm sát hạch lái xe không lưu trữ hoặc lưu trữ không đầy đủ hồ sơ của một kỳ sát hạch: phạt tiền từ 5.000.000 đồng đến 10.000.000 đồng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -733,7 +767,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 18
+    "sample_id": 18,
+    "model_answer": "- Vi phạm cho phép (hoặc tự lái) phương tiện thực hiện hành vi tại điểm a, điểm b khoản 6 Điều 21 → phạt tiền 20.000.000‑26.000.000 đồng (cá nhân) hoặc 40.000.000‑52.000.000 đồng (tổ chức).  \n- Xe gắn biển số không đúng hoặc không do cơ quan có thẩm quyền cấp → phạt tiền 20.000.000‑26.000.000 đồng (cá nhân) hoặc 40.000.000‑52.000.000 đồng (tổ chức).  \n\n**Tổng mức phạt**  \n- Nếu là cá nhân: 40.000.000‑52.000.000 đồng.  \n- Nếu là tổ chức: 80.000.000‑104.000.000 đồng.  \n\nKhông có điểm bị trừ, không có xử phạt bổ sung hay biện pháp khắc phục hậu quả khác cho hai hành vi trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -769,7 +805,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 19
+    "sample_id": 19,
+    "model_answer": "Vi phạm 1: Sử dụng xe tập lái không trang bị bộ phận hãm phụ hoặc có nhưng không có tác dụng.  \n- Phạt tiền: 5.000.000 – 10.000.000 đồng (theo khoản 39.3.c).  \n\nVi phạm 2: Tuyển sinh học viên không đủ điều kiện trình độ văn hóa, thời gian lái xe an toàn tương ứng với hạng đào tạo và không có hồ sơ đầy đủ theo quy định.  \n- Phạt tiền: 5.000.000 – 10.000.000 đồng (theo khoản 39.3.d).",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -814,7 +852,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 20
+    "sample_id": 20,
+    "model_answer": "- Hành vi 1: Đưa xe tải chuyên dùng có giấy chứng nhận kiểm định an toàn kỹ thuật hết hạn dưới 01 tháng.  \n  • Phạt tiền: 4.000.000 – 6.000.000 đồng (cá nhân) hoặc 8.000.000 – 12.000.000 đồng (tổ chức).  \n  • Không có điểm phạt, không có biện pháp bổ sung khác.\n\n- Hành vi 2: Lắp kính không đáp ứng tiêu chuẩn an toàn kỹ thuật.  \n  • Phạt tiền: 300.000 – 400.000 đồng (cá nhân) hoặc 600.000 – 800.000 đồng (tổ chức).  \n  • Biện pháp khắc phục hậu quả: buộc thay thế kính bằng loại kính an toàn kỹ thuật đúng tiêu chuẩn (theo quy định 32.19.b).  \n  • Không có điểm phạt.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -850,7 +890,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 21
+    "sample_id": 21,
+    "model_answer": "Vi phạm 1: Không tuân thủ quy trình, quy chuẩn kỹ thuật trong chứng nhận, kiểm định xe máy chuyên dùng → áp dụng khoản 40.2.d, phạt tiền 10.000.000 – 15.000.000 đồng.  \n\nVi phạm 2: Đưa ra yêu cầu trái quy định về trình tự, thủ tục đăng kiểm đối với chủ xe → áp dụng khoản 40.4.b, phạt tiền 16.000.000 – 20.000.000 đồng.  \n\nKhông có hình phạt trừ điểm, không có biện pháp bổ sung khác được quy định trong các khoản trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -886,7 +928,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 22
+    "sample_id": 22,
+    "model_answer": "- Hành vi 1: Không có chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới.  \n  → Phạt tiền: 200.000 – 300.000 đồng.  \n\n- Hành vi 2: Sử dụng giấy phép lái xe không hợp lệ (số phôi không trùng với số phôi được cấp mới nhất).  \n  → Nếu xe là mô tô hai bánh có dung tích xi‑lanh > 125 cm³ hoặc công suất điện > 11 kW, hoặc là mô tô ba bánh: phạt tiền 6.000.000 – 8.000.000 đồng.  \n  → Nếu xe có dung tích ≤ 125 cm³ và công suất ≤ 11 kW, quy định trên không áp dụng; cần biết dung tích/ công suất để xác định mức phạt.  \n\n- Không có quy định trừ điểm, tước quyền sử dụng giấy phép lái xe, tịch thu phương tiện hoặc biện pháp khắc phục hậu quả trong các khoản trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -922,7 +966,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 23
+    "sample_id": 23,
+    "model_answer": "- Cơ sở đào tạo lái xe: phạt tiền từ 20.000.000 đ đến 30.000.000 đ.  \n- Trung tâm sát hạch lái xe: phạt tiền từ 20.000.000 đ đến 30.000.000 đ + tước quyền sử dụng giấy phép sát hạch từ 02 tháng đến 04 tháng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -975,7 +1021,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 24
+    "sample_id": 24,
+    "model_answer": "Vi phạm 1: Không có hoặc không mang theo giấy vận tải (hoặc không cung cấp thiết bị truy cập khi yêu cầu) – khoản 21.2.đ  \n- Phạt tiền: 800.000 – 1.000.000 đồng.  \n\nVi phạm 2: Hàng hoá không chằng buộc hoặc chằng buộc không đảm bảo an toàn – khoản 21.8.đ  \n- Phạt tiền: 8.000.000 – 12.000.000 đồng.  \n- Trừ 04 điểm giấy phép lái xe (theo khoản 21.13.b áp dụng cho khoản 8).  \n\nKhông có hình thức xử phạt bổ sung (tước quyền lái, tịch thu phương tiện) được quy định cho các hành vi này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1011,7 +1059,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 25
+    "sample_id": 25,
+    "model_answer": "- Giáo viên dạy thực hành: vi phạm 39.1.b → phạt tiền từ 2.000.000 đ đến 3.000.000 đ.  \n- Trung tâm sát hạch lái xe: vi phạm 39.4.k → phạt tiền từ 10.000.000 đ đến 20.000.000 đ.  \n\nKhông có hình phạt trừ điểm, tước quyền sử dụng giấy phép lái xe, tịch thu phương tiện hay biện pháp khắc phục hậu quả khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1056,7 +1106,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 26
+    "sample_id": 26,
+    "model_answer": "- **Vi phạm 1:** Mang vật cồng kềnh trên yên xe.  \n  - Phạt tiền: 600.000 – 800.000 đồng.  \n  - Trừ điểm: 3 điểm (theo Nghị định 168/2024/NĐ‑CP).  \n  - Không có hình thức xử phạt bổ sung khác.  \n\n- **Vi phạm 2:** Chuyển hướng trái không nhường quyền đi trước cho người đi bộ qua vạch dành cho người đi bộ.  \n  - Phạt tiền: 1.000.000 – 2.000.000 đồng.  \n  - Trừ điểm: 6 điểm.  \n  - Không có hình thức xử phạt bổ sung khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1102,7 +1154,9 @@
         "unit": "month"
       }
     ],
-    "sample_id": 27
+    "sample_id": 27,
+    "model_answer": "Hành vi (1): phạt tiền 8.000.000 – 10.000.000 đồng.  \nHành vi (2): bên cạnh hình phạt chính, áp dụng hình phạt bổ sung tước quyền sử dụng giấy phép lái xe 22 tháng – 24 tháng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1138,7 +1192,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 28
+    "sample_id": 28,
+    "model_answer": "1. **Không làm thủ tục thu hồi chứng nhận đăng ký xe, biển số, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường** (theo quy định 32.7.b)  \n   - Phạt tiền: 4.000.000 đ – 6.000.000 đ (đối với cá nhân).  \n   - Không có quy định trừ điểm, tước quyền lái xe hay biện pháp khắc phục khác.\n\n2. **Cải tạo xe ô tô tải thành xe ô tô chở người mà không có giấy phép** (theo quy định 32.17.b)  \n   - Hình thức xử phạt bổ sung: tịch thu phương tiện.  \n   - Không có mức phạt tiền, trừ điểm hoặc biện pháp khắc phục khác được quy định trong mục này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1174,7 +1230,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 29
+    "sample_id": 29,
+    "model_answer": "**1. Vi phạm thay đổi màu sơn, nhãn hiệu xe không khớp với chứng nhận đăng ký**  \n- Phạt tiền: 800.000 – 1.000.000 đồng (cá nhân) / 1.600.000 – 2.000.000 đồng (tổ chức).  \n- Trừ điểm: 2 điểm giấy phép lái xe.  \n- Biện pháp khắc phục hậu quả: buộc khôi phục lại màu sơn, nhãn hiệu đúng theo chứng nhận đăng ký xe (theo quy định 32.19.a).  \n\n**2. Vi phạm lắp đặt hệ thống âm thanh, ánh sáng mạnh gây ồn ào, mất trật tự**  \n- Phạt tiền: 800.000 – 1.000.000 đồng (cá nhân) / 1.600.000 – 2.000.000 đồng (tổ chức).  \n- Trừ điểm: 2 điểm giấy phép lái xe.  \n- Biện pháp khắc phục hậu quả: buộc tháo dỡ thiết bị âm thanh, ánh sáng gây mất trật tự (theo quy định 32.19.h).  \n\n**Xử lý tổng hợp**  \n- Hai hành vi được xử phạt độc lập, áp dụng đồng thời các hình thức trên cho mỗi hành vi.  \n- Không có hình thức tước quyền sử dụng giấy phép lái xe, tịch thu phương tiện hoặc các biện pháp bổ sung khác trong trường hợp này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1210,7 +1268,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 30
+    "sample_id": 30,
+    "model_answer": "Vi phạm 1: Không nhường đường cho xe cứu thương đang bật tín hiệu ưu tiên.  \n- Căn cứ 6.6.b – phạt tiền 6.000.000 đ – 8.000.000 đồng.  \n- Trừ 5 điểm giấy phép lái xe.  \n\nVi phạm 2: Không dừng lại, không giữ nguyên hiện trường, không trợ giúp người bị nạn sau vụ tai nạn.  \n- Căn cứ 6.4.g – phạt tiền 2.000.000 đ – 3.000.000 đồng.  \n- Trừ 5 điểm giấy phép lái xe.  \n\nTổng hợp: phạt tiền 8.000.000 đ – 11.000.000 đồng; trừ 10 điểm (điểm tối đa cho phép là 9 điểm), do đó tước quyền sử dụng giấy phép lái xe. Không có hình thức tịch thu phương tiện hay biện pháp khắc phục hậu quả khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1246,7 +1306,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 31
+    "sample_id": 31,
+    "model_answer": "Vi phạm:\n\n1. Chở 2 người hành khách trên xe mô tô (không thuộc trường hợp ngoại lệ).  \n2. Lắp và sử dụng thiết bị phát tín hiệu ưu tiên trái quy định.\n\nHình phạt áp dụng:\n\n- **Phạt tiền**: 400.000 – 600.000 đồng (theo khoản 7.2.g).  \n- **Phạt bổ sung**: tịch thu thiết bị phát tín hiệu ưu tiên (theo khoản 7.12.a).  \n- **Trừ điểm**: không có (không quy định trong các khoản trên).  \n- **Biện pháp khắc phục**: không có yêu cầu khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1282,7 +1344,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 32
+    "sample_id": 32,
+    "model_answer": "**1. Hành vi vi phạm**  \n- a) Xe tải chở hàng vượt quá trọng tải cho phép.  \n- b) Kẻ hoặc dán chữ, số biển số không đúng quy định (biển số giả, thay đổi, không khớp với đăng ký).\n\n**2. Hình thức xử phạt cho từng hành vi**  \n\n| Hành vi | Phạt tiền (tối thiểu – tối đa) | Điểm tước | Xử phạt bổ sung | Biện pháp khắc phục hậu quả |\n|---------|--------------------------------|-----------|-----------------|------------------------------|\n| a) Quá tải hàng hoá | 1.000.000 – 2.000.000 đồng (cá nhân) / 2.000.000 – 4.000.000 đồng (tổ chức) | 2 điểm | Tước quyền sử dụng giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường, tạm thời thu hồi tem kiểm định từ 01 tháng đến 03 tháng (theo khoản 32.18.c). | — |\n| b) Thay đổi/kẻ hoặc dán chữ, số biển số không đúng | 2.000.000 – 4.000.000 đồng (cá nhân) / 4.000.000 – 8.000.000 đồng (tổ chức) | 2 điểm | — | Buộc phải thực hiện đúng quy định về biển số xe, kẻ hoặc dán chữ, số biển số (theo khoản 32.19.c). |\n\n**3. Ghi chú**  \n- Nếu người lái là tài xế, điểm tước sẽ được trừ vào giấy phép lái xe của tài xế tương ứng.  \n- Các mức phạt trên dựa trên Nghị định 168/2024/NĐ‑CP; nếu có quy định cụ thể khác cho loại xe hoặc mức quá tải cao hơn, mức phạt tối đa có thể được nâng lên theo quy định tương ứng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1335,7 +1399,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 33
+    "sample_id": 33,
+    "model_answer": "Hành vi 1 : Cung cấp xe có chứng nhận đăng ký không do cơ quan có thẩm quyền cấp (hoặc đã bị tẩy xóa) hoặc số khung, số động cơ không khớp.  \n- Áp dụng khoản 32.8.e → phạt tiền:  \n  • Cá nhân : 4 .000.000 – 6 .000.000 đồng.  \n  • Tổ chức : 8 .000.000 – 12 .000.000 đồng.  \n\nHành vi 2 : Giao xe cho nhân viên để người đó lái xe vượt đèn đỏ (điểm a, b khoản 6 Điều 21).  \n- Áp dụng khoản 32.13.a → phạt tiền:  \n  • Cá nhân : 20 .000.000 – 26 .000.000 đồng.  \n  • Tổ chức : 40 .000.000 – 52 .000.000 đồng.  \n\nKết hợp cả hai vi phạm (cumulative):  \n- Nếu là cá nhân: tổng phạt từ 24 .000.000 đồng đến 32 .000.000 đồng.  \n- Nếu là tổ chức: tổng phạt từ 48 .000.000 đồng đến 64 .000.000 đồng.  \n\nKhông có quy định trừ điểm giấy phép lái xe, không có hình phạt bổ sung (tước quyền, tịch thu…) cho các hành vi trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1380,7 +1446,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 34
+    "sample_id": 34,
+    "model_answer": "- Hành vi 1: Giao hoặc để người đại diện lái xe thực hiện vi phạm khoản 4 Điều 21 → phạt tiền 4.000.000 – 6.000.000 đồng (đối với cá nhân).  \n- Hành vi 2: Phương tiện giao thông thông minh không có giấy phép hoạt động hoặc giấy phép đã hết hạn → phạt tiền 16.000.000 – 18.000.000 đồng (đối với cá nhân).  \n\nKhông có điểm phạt, không có hình thức xử phạt bổ sung hay biện pháp khắc phục hậu quả khác được quy định cho hai hành vi trên.  \n\nTổng mức phạt (nếu tính gộp): 20.000.000 – 24.000.000 đồng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1416,7 +1484,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 35
+    "sample_id": 35,
+    "model_answer": "**1. Vi phạm sử dụng xe trung chuyển chở hành khách không đúng quy định**  \n- Phạt tiền:  \n  • Đối với cá nhân: 5.000.000 – 6.000.000 đồng.  \n  • Đối với tổ chức (chủ sở hữu, doanh nghiệp kinh doanh vận tải): 10.000.000 – 12.000.000 đồng.  \n- Không có điểm trừ, không có biện pháp bổ sung khác (tước quyền, tịch thu…) được quy định trong mục 26.7.d.  \n\n**2. Vi phạm không cung cấp, cập nhật, truyền dẫn, lưu trữ và quản lý thông tin, dữ liệu thu thập từ thiết bị giám sát hành trình và thiết bị ghi hình người lái xe**  \n- Theo mục 26.13.d: ngoài bất kỳ hình thức xử phạt nào (mức phạt không được nêu trong trích dẫn), phải thực hiện **biện pháp khắc phục hậu quả**:  \n  • Cung cấp, cập nhật, truyền dẫn, lưu trữ và quản lý đầy đủ thông tin, dữ liệu theo quy định hiện hành.  \n\n**Ghi chú:** Trích dẫn không liệt kê mức phạt tiền cụ thể cho hành vi 26.13.d; nếu có hình phạt, cần tham khảo điều khoản tương ứng trong Nghị định 168/2024/NĐ‑CP. Không có điểm trừ lái xe được quy định cho các hành vi trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1452,7 +1522,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 36
+    "sample_id": 36,
+    "model_answer": "- **Vi phạm 1** (điểm e khoản 3; điểm i khoản 5 Điều 20 – không nhường đường cho phương tiện ưu tiên)  \n  - Chủ phương tiện (tổ chức): phạt tiền **8 .000.000 – 12 .000.000 đồng**.  \n  - Người lái (cá nhân): phạt tiền **4 .000.000 – 6 .000.000 đồng**.  \n  - Không có điểm trừ, không có hình phạt bổ sung khác.\n\n- **Vi phạm 2** (khoản 2 Điều 34 – vượt quá tốc độ trong khu vực công trình)  \n  - Chủ phương tiện (tổ chức): phạt tiền **20 .000.000 – 24 .000.000 đồng**.  \n  - Người lái (cá nhân): phạt tiền **10 .000.000 – 12 .000.000 đồng**.  \n  - Không có điểm trừ, không có hình phạt bổ sung khác.\n\n**Tổng mức phạt** (nếu cùng một vụ vi phạm):  \n- Chủ phương tiện: **28 .000.000 – 36 .000.000 đồng**.  \n- Người lái: **14 .000.000 – 18 .000.000 đồng**.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1497,7 +1569,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 37
+    "sample_id": 37,
+    "model_answer": "Hành vi 1 – không dán hoặc dán sai biển số (điểm e khoản 32.9)  \n- Phạt tiền:  \n  • Nếu là cá nhân: 4 .000.000 – 6 .000.000 đồng  \n  • Nếu là tổ chức (chủ xe): 8 .000.000 – 12 .000.000 đồng  \n\nHành vi 2 – giao cho người lái thực hiện vi phạm tại điểm a, d khoản 5 Điều 21 (điểm b khoản 32.11)  \n- Phạt tiền:  \n  • Nếu là cá nhân: 10 .000.000 – 12 .000.000 đồng  \n  • Nếu là tổ chức (chủ xe): 20 .000.000 – 24 .000.000 đồng  \n\nKhông có quy định trừ điểm, tước quyền lái xe, tịch thu phương tiện hay biện pháp khắc phục hậu quả đối với hai hành vi này theo Nghị định 168/2024/NĐ‑CP.  \n\nTổng mức phạt (nếu là tổ chức): 8 – 12 triệu + 20 – 24 triệu = 28 – 36 triệu đồng.  \nNếu là cá nhân: 4 – 6 triệu + 10 – 12 triệu = 14 – 18 triệu đồng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1533,7 +1607,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 38
+    "sample_id": 38,
+    "model_answer": "Hành vi vi phạm: chở hàng siêu trường, siêu trọng không có giấy phép lưu hành hoặc giấy phép đã hết giá trị sử dụng.  \nXử phạt: phạt tiền từ 13.000.000 đồng đến 15.000.000 đồng. (Không có điểm trừ, không có hình phạt bổ sung khác được quy định cho hành vi này.)",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1569,7 +1645,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 39
+    "sample_id": 39,
+    "model_answer": "Vi phạm 1: Điều khiển xe chạy dưới tốc độ tối thiểu (30 km/h < 40 km/h) → phạt tiền từ 800.000 đ đến 1.000.000 đ.\n\nVi phạm 2: Nồng độ cồn trong hơi thở 0,20 mg/L (không vượt quá 0,25 mg/L) → phạt tiền từ 3.000.000 đ đến 5.000.000 đ.\n\nTổng mức phạt tối thiểu: 800.000 đ + 3.000.000 đ = 3.800.000 đ.  \nTổng mức phạt tối đa: 1.000.000 đ + 5.000.000 đ = 6.000.000 đ.\n\nKhông có quy định trừ điểm, tước quyền sử dụng giấy phép lái xe, tịch thu phương tiện hoặc biện pháp khắc phục hậu quả cho hai hành vi này theo các khoản nêu trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1605,7 +1683,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 40
+    "sample_id": 40,
+    "model_answer": "Vi phạm: 13.3.d – lắp thêm ghế, giường nằm hoặc thay đổi kích thước khoang hành lý không đúng với thông số kỹ thuật trong giấy chứng nhận kiểm định.  \n\nXử phạt:  \n- Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng.  \n- Xử phạt bổ sung: tịch thu biển số xe (theo 13.10.a).  \n- Không có điểm phạt, không có biện pháp khắc phục hậu quả khác được quy định.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1641,7 +1721,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 41
+    "sample_id": 41,
+    "model_answer": "1. Vi phạm chuyển làn không đúng nơi cho phép, không có tín hiệu báo trước và chuyển sang làn không liền kề (Điều 6.2.a)  \n   - Phạt tiền: 600.000 – 800.000 đồng  \n   - Trừ điểm: 3 điểm giấy phép lái xe  \n\n2. Vi phạm không nhường đường, gây cản trở xe cứu thương đang bật đèn và phát tín hiệu ưu tiên (Điều 6.6.b)  \n   - Phạt tiền: 6.000.000 – 8.000.000 đồng  \n   - Trừ điểm: 6 điểm giấy phép lái xe  \n\nKhông có hình thức xử phạt bổ sung (tước quyền, tịch thu…) và không có biện pháp khắc phục hậu quả khác.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1677,7 +1759,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 42
+    "sample_id": 42,
+    "model_answer": "- Phạt tiền: 4.000.000 đ – 6.000.000 đ (đối với cá nhân).  \n- Trừ điểm: 10 điểm giấy phép lái xe.  \n- Không có hình thức xử phạt bổ sung hay biện pháp khắc phục hậu quả khác áp dụng cho hai hành vi này.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1713,7 +1797,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 43
+    "sample_id": 43,
+    "model_answer": "Vi phạm 1: Chở người trên buồng lái quá số lượng quy định.  \n- Phạt tiền: 600.000 – 800.000 đồng.  \n- Trừ điểm: 5 điểm giấy phép lái xe.  \n\nVi phạm 2: Dừng, đỗ xe trên dải phân cách cố định ở đoạn đường ngoài đô thị (lề đường rộng).  \n- Phạt tiền: 600.000 – 800.000 đồng.  \n- Trừ điểm: 5 điểm giấy phép lái xe.  \n\nKhông có hình thức xử phạt bổ sung (tước quyền, tịch thu…) và không có biện pháp khắc phục hậu quả đặc biệt. Tổng mức phạt tiền có thể từ 1.200.000 đến 1.600.000 đồng; tổng điểm bị trừ 10 điểm.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1749,7 +1835,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 44
+    "sample_id": 44,
+    "model_answer": "Vi phạm 1: Dừng xe, đỗ xe trên cầu → Điều 7.3.c  \n- Phạt tiền: 600.000 – 800.000 đồng.  \n- Trừ điểm: 3 điểm (theo quy định chung của Điều 7.3).  \n\nVi phạm 2: Người điều khiển xe (có hành khách đứng trên yên) bám, kéo xe khác → Điều 7.3.e  \n- Phạt tiền: 600.000 – 800.000 đồng.  \n- Trừ điểm: 3 điểm.  \n\nKhông có hình thức xử phạt bổ sung (tước quyền lái, tịch thu phương tiện) và không có biện pháp khắc phục hậu quả.  \n\nTổng cộng (nếu áp dụng riêng cho mỗi vi phạm): phạt tiền 1.200.000 – 1.600.000 đồng, trừ 6 điểm giấy phép lái xe.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1785,7 +1873,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 45
+    "sample_id": 45,
+    "model_answer": "- Hành vi 1: Không quan sát tín hiệu giao thông, vượt quá tốc độ quy định và gây tai nạn.  \n  → Phạt tiền từ 14.000.000 đ đến 16.000.000 đ (điểm phạt, tước quyền lái xe, tịch thu phương tiện không có trong quy định này).\n\n- Hành vi 2: Không dừng lại, không giữ nguyên hiện trường và không trợ giúp người bị nạn sau vụ tai nạn.  \n  → Phạt tiền từ 2.000.000 đ đến 3.000.000 đ (điểm phạt, tước quyền lái xe, tịch thu phương tiện không có trong quy định này).\n\n**Tổng hợp:** Người lái xe phải chịu cả hai mức phạt trên (cộng dồn). Không có quy định trừ điểm hoặc các hình thức xử phạt bổ sung khác trong các khoản nêu.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1821,7 +1911,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 46
+    "sample_id": 46,
+    "model_answer": "1. **Vi phạm 6.4.e** – Lùi xe trên đường một chiều có biển “Cấm đi ngược chiều”, vào khu vực cấm dừng, không quan sát hai bên, không có tín hiệu lùi.  \n   - Phạt tiền: 2.000.000 – 3.000.000 đồng.  \n   - Trừ điểm: 6 điểm giấy phép lái xe.  \n   - Xử phạt bổ sung (nếu có): tước quyền sử dụng giấy phép lái xe từ 3 tháng đến 6 tháng; tịch thu phương tiện (theo quyết định của cơ quan quản lý).  \n\n2. **Vi phạm 6.4.g** – Không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn sau khi gây tai nạn.  \n   - Phạt tiền: 2.000.000 – 3.000.000 đồng.  \n   - Trừ điểm: 6 điểm giấy phép lái xe.  \n   - Xử phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 3 tháng đến 12 tháng; tịch thu phương tiện (nếu cơ quan quyết định).  \n   - Biện pháp khắc phục hậu quả: phải giữ nguyên hiện trường, hỗ trợ, cứu trợ người bị nạn và bồi thường thiệt hại theo quy định.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1857,7 +1949,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 47
+    "sample_id": 47,
+    "model_answer": "Vi phạm 1: Không chấp hành hiệu lệnh, chỉ dẫn của biển báo, vạch kẻ đường (ví dụ vượt đèn đỏ)  \n- Phạt tiền: 400.000 – 600.000 đồng  \n- Trừ điểm: 6 điểm giấy phép lái xe  \n\nVi phạm 2: Không thắt dây đai an toàn khi điều khiển xe  \n- Phạt tiền: 800.000 – 1.000.000 đồng  \n- Trừ điểm: 2 điểm giấy phép lái xe  \n\nTổng hợp:  \n- Phạt tiền cộng dồn: 1.200.000 – 1.600.000 đồng  \n- Trừ điểm cộng dồn: 8 điểm (nếu tổng điểm bị trừ vượt quá 12 điểm, sẽ có biện pháp tước quyền sử dụng giấy phép lái xe theo quy định).",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1902,7 +1996,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 48
+    "sample_id": 48,
+    "model_answer": "Vi phạm 1: Sử dụng xe tải vận chuyển động vật sống không có kết cấu phù hợp.  \n- Phạt tiền đối với tổ chức: 8.000.000 – 12.000.000 đồng (theo quy định 26.6.a).  \n\nVi phạm 2: Sử dụng xe ô tô kinh doanh vận tải chở trẻ em mầm non, học sinh không sơn màu theo quy định.  \n- Phạt tiền đối với tổ chức: 8.000.000 – 12.000.000 đồng (theo quy định 26.6.c).",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1955,7 +2051,9 @@
         "unit": "point"
       }
     ],
-    "sample_id": 49
+    "sample_id": 49,
+    "model_answer": "1. **Không nhường quyền đi trước cho người đi bộ/xe lăn tại vạch qua đường**  \n   - Phạt tiền: 1.000.000 – 2.000.000 đồng (theo quy định 7.5.b).  \n   - Trừ điểm: 3 điểm giấy phép lái xe.  \n\n2. **Gây tai nạn, không dừng, không giữ nguyên hiện trường, không trợ giúp, không báo cáo**  \n   - Phạt tiền: 8.000.000 – 10.000.000 đồng (theo quy định 7.9.c).  \n   - Trừ điểm: 6 điểm giấy phép lái xe.  \n\nKhông có hình thức xử phạt bổ sung (tước quyền lái xe, tịch thu phương tiện) được quy định cho các hành vi trên.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",
@@ -1991,7 +2089,9 @@
       }
     ],
     "supplementary_penalties": [],
-    "sample_id": 50
+    "sample_id": 50,
+    "model_answer": "**Vi phạm 1 – Không lắp hoặc không ghi dữ liệu thiết bị ghi hình người lái xe trên xe cứu hộ**  \n- Phạt tiền: 4.000.000 – 6.000.000 đồng (cá nhân) / 8.000.000 – 12.000.000 đồng (chủ xe).  \n- Không có điểm trừ, không có hình phạt bổ sung, không có biện pháp khắc phục hậu quả khác.  \n\n**Vi phạm 2 – Giao xe cho người không đủ điều kiện lái (giấy phép đã hết hạn)**  \n- Phạt tiền: 28.000.000 – 30.000.000 đồng (cá nhân) / 56.000.000 – 60.000.000 đồng (chủ xe).  \n- Không có điểm trừ, không có hình phạt bổ sung, không có biện pháp khắc phục hậu quả khác.  \n\n**Tổng hợp**  \n- Người điều khiển (cá nhân) phải nộp phạt 4‑6 tr + 28‑30 tr = 32‑36 triệu đồng.  \n- Chủ xe (tổ chức) phải nộp phạt 8‑12 tr + 56‑60 tr = 64‑72 triệu đồng.",
+    "answer_provider": "groq"
   },
   {
     "question_type": "multihop",

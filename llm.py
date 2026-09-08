@@ -22,7 +22,6 @@ OPENROUTER_API_KEY =  os.getenv("OPENROUTER_API_KEY")
 # Clients
 # ==========================
 
-print(repr(GROQ_API_KEY))
 groq_client = OpenAI(
     api_key=GROQ_API_KEY,
     base_url="https://api.groq.com/openai/v1",
@@ -97,7 +96,16 @@ def llm_chat(
     messages: List[Dict],
     temperature: float = 0,
     providers=PROVIDERS,
+    provider: str = None,
 ):
+    if provider:
+        providers = [(n, f) for n, f in providers if n == provider]
+        if not providers:
+            raise ValueError(
+                f"Unknown provider '{provider}'. "
+                f"Available: {[n for n, _ in PROVIDERS]}"
+            )
+
     last_error = None
 
     for name, func in providers:

@@ -13,7 +13,19 @@
     },
     "sample_id": 1,
     "model_answer": "Có, nhưng không bị xử phạt. Theo khoản 10.2.a, người đi bộ vào đường cao tốc chỉ bị phạt tiền 400.000‑600.000 đồng, **trừ** trường hợp là người phục vụ việc quản lý, bảo trì đường cao tốc. Vì người thực hiện công việc quản lý hoặc bảo trì thuộc đối tượng “người phục vụ việc quản lý, bảo trì”, hành vi này được luật loại trừ, không áp dụng hình phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi vào đường cao tốc",
+      "exception": "người phục vụ việc quản lý, bảo trì đường cao tốc",
+      "fine_if_penalized_min": 400000,
+      "fine_if_penalized_max": 600000,
+      "license_points_if_penalized": null,
+      "point_id": "10.2.a",
+      "point_content": "Đi vào đường cao tốc, trừ người phục vụ việc quản lý, bảo trì đường cao tốc;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -29,7 +41,19 @@
     },
     "sample_id": 2,
     "model_answer": "Không bị xử phạt. Theo khoản 12.2.c, hành vi “điều khiển vật thể bay, tàu bay không người lái, phương tiện bay siêu nhẹ hoạt động trong phạm vi khổ giới hạn đường bộ gây cản trở hoặc nguy cơ mất an toàn cho người, phương tiện tham gia giao thông đường bộ” chỉ bị xử phạt nếu không có giấy phép; trường hợp đã được cấp phép bay được loại trừ, vì vậy không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển vật thể bay, tàu bay không người lái, phương tiện bay siêu nhẹ hoạt động trong phạm vi khổ giới hạn đường bộ gây cản trở hoặc nguy cơ mất an toàn cho người, phương tiện tham gia giao thông đường bộ",
+      "exception": "tàu bay không người lái, phương tiện bay siêu nhẹ được cấp phép bay",
+      "fine_if_penalized_min": 200000,
+      "fine_if_penalized_max": 250000,
+      "license_points_if_penalized": null,
+      "point_id": "12.2.c",
+      "point_content": "Điều khiển vật thể bay, tàu bay không người lái, phương tiện bay siêu nhẹ hoạt động trong phạm vi khổ giới hạn đường bộ gây cản trở hoặc nguy cơ mất an toàn cho người, phương tiện tham gia giao thông đường bộ, trừ tàu bay không người lái, phương tiện bay siêu nhẹ được cấp phép bay;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -45,7 +69,19 @@
     },
     "sample_id": 3,
     "model_answer": "Không bị xử phạt vì quy định 13.3.a chỉ xử phạt “điều khiển xe lắp thêm đèn …, trừ đèn sương mù dạng rời được lắp theo quy định”. Khi đèn sương mù rời được lắp đúng quy chuẩn, hành vi này nằm trong ngoại lệ, do đó không áp dụng hình phạt. (Nếu không đáp ứng quy định kỹ thuật thì sẽ bị phạt tiền 1.000.000‑2.000.000 đồng theo khoản 13.3.a.)",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe",
+      "exception": "đèn sương mù dạng rời được lắp theo quy định",
+      "fine_if_penalized_min": 1000000,
+      "fine_if_penalized_max": 2000000,
+      "license_points_if_penalized": null,
+      "point_id": "13.3.a",
+      "point_content": "Điều khiển xe lắp thêm đèn phía trước, phía sau, trên nóc, dưới gầm, một hoặc cả hai bên thành xe, trừ đèn sương mù dạng rời được lắp theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -61,7 +97,19 @@
     },
     "sample_id": 4,
     "model_answer": "Có. Theo khoản 13.6.b, mức phạt 4.000.000 – 6.000.000 đồng áp dụng cho việc điều khiển xe không có giấy chứng nhận hoặc tem kiểm định (đối với loại xe phải kiểm định), **trừ** trường hợp xe đăng ký tạm thời. Vì người lái là xe đăng ký tạm thời, hành vi này **không bị xử phạt**.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên",
+      "exception": "xe đăng ký tạm thời",
+      "fine_if_penalized_min": 4000000,
+      "fine_if_penalized_max": 6000000,
+      "license_points_if_penalized": null,
+      "point_id": "13.6.b",
+      "point_content": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định, trừ xe đăng ký tạm thời) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên (kể cả rơ moóc và sơ mi rơ moóc)."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -77,7 +125,19 @@
     },
     "sample_id": 5,
     "model_answer": "Có. Theo khoản 16.2.b, mức phạt 1.000.000 – 2.000.000 đồng áp dụng cho “điều khiển xe không có giấy chứng nhận hoặc tem kiểm định … (đối với loại xe có quy định phải kiểm định, **trừ xe đăng ký tạm thời**) hoặc … hết hạn từ 01 tháng trở lên”. Vì trường hợp là **xe đăng ký tạm thời**, quy định này không áp dụng → không bị xử phạt. (Nếu xe không phải đăng ký tạm thời thì sẽ bị phạt tiền 1‑2 triệu đồng.)",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên (kể cả rơ moóc)",
+      "exception": "xe đăng ký tạm thời",
+      "fine_if_penalized_min": 1000000,
+      "fine_if_penalized_max": 2000000,
+      "license_points_if_penalized": null,
+      "point_id": "16.2.b",
+      "point_content": "Điều khiển xe không có giấy chứng nhận hoặc tem kiểm định an toàn kỹ thuật và bảo vệ môi trường (đối với loại xe có quy định phải kiểm định, trừ xe đăng ký tạm thời) hoặc có nhưng đã hết hiệu lực (hạn sử dụng) từ 01 tháng trở lên (kể cả rơ moóc);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -93,7 +153,19 @@
     },
     "sample_id": 6,
     "model_answer": "Không bị xử phạt. Quy định 18.8.b chỉ áp dụng cho “giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp (trừ giấy phép lái xe quốc tế do Việt Nam cấp)”. Vì giấy phép lái xe quốc tế trong trường hợp này do Việt Nam cấp, nên không thuộc phạm vi xử phạt của khoản trên và không có quy định nào khác quy định phạt cho hành vi này. Vì vậy không có hình phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Có giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp nhưng không mang theo giấy phép lái xe quốc gia phù hợp với loại xe được phép điều khiển",
+      "exception": "giấy phép lái xe quốc tế do Việt Nam cấp",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "18.8.b",
+      "point_content": "Có giấy phép lái xe quốc tế do các nước tham gia Công ước của Liên hợp quốc về Giao thông đường bộ năm 1968 cấp (trừ giấy phép lái xe quốc tế do Việt Nam cấp) nhưng không mang theo giấy phép lái xe quốc gia phù hợp với loại xe được phép điều khiển;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -109,7 +181,19 @@
     },
     "sample_id": 7,
     "model_answer": "Có. Hành vi “để người ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến” (trừ các đối tượng miễn) bị xử phạt theo khoản 20.3.b của Nghị định 168/2024/NĐ‑CP.\n\n- **Phạt tiền:** 600.000 đ – 800.000 đồng (theo mức tối thiểu – tối đa).  \n- **Trừ điểm lái xe:** Không có quy định trừ điểm cho hành vi này trong Nghị định 168/2024/NĐ‑CP.  \n- **Xử phạt bổ sung / biện pháp khắc phục:** Không có.  \n\nVì người lái xe không thuộc các đối tượng miễn (trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật), nên sẽ bị phạt tiền trong khoảng trên.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "để người ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến",
+      "exception": "người lái xe, trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật",
+      "fine_if_penalized_min": 600000,
+      "fine_if_penalized_max": 800000,
+      "license_points_if_penalized": null,
+      "point_id": "20.3.b",
+      "point_content": "Để người ngồi trên xe khi xe xuống phà, đang trên phà và khi lên bến (trừ người lái xe, trẻ em, phụ nữ mang thai, người già yếu, người bệnh, người khuyết tật);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -125,7 +209,19 @@
     },
     "sample_id": 8,
     "model_answer": "Có, nhưng không bị xử phạt vì quy định 20.3.h chỉ áp dụng cho xe ô tô kinh doanh vận tải **không có dây đai an toàn** tại các vị trí ghế ngồi, giường nằm **trừ xe buýt nội tỉnh**. Vì tài xế là xe buýt nội tỉnh, hành vi này thuộc trường hợp loại trừ, nên không có hình phạt tiền, không trừ điểm, không có hình thức xử phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe ô tô kinh doanh vận tải không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định",
+      "exception": "xe buýt nội tỉnh",
+      "fine_if_penalized_min": 600000,
+      "fine_if_penalized_max": 800000,
+      "license_points_if_penalized": null,
+      "point_id": "20.3.h",
+      "point_content": "Điều khiển xe ô tô kinh doanh vận tải không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định (trừ xe buýt nội tỉnh);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -141,7 +237,19 @@
     },
     "sample_id": 9,
     "model_answer": "Có bị xử phạt.  \n- Phạt tiền: 800.000 – 1.000.000 đồng (theo khoản 21.2.a, vì xe xi téc chở chất lỏng vượt trọng tải 20 % – 30%).  \n- Trừ điểm: quy định điểm trừ không nêu rõ trong trích dẫn; nếu hành vi thuộc khoản 7 thì trừ 08 điểm, nếu thuộc khoản 9 thì trừ 06 điểm (cần xác định khoản quy định cụ thể).  \n- Không có hình thức xử phạt bổ sung (tước quyền, tịch thu…) và không có biện pháp khắc phục hậu quả được quy định trong trường hợp này.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 30%",
+      "exception": "trừ xe xi téc chở chất lỏng",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "21.2.a",
+      "point_content": "Điều khiển xe (kể cả rơ moóc và sơ mi rơ moóc) chở hàng vượt trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 30% (trừ xe xi téc chở chất lỏng), trên 20% đến 30% đối với xe xi téc chở chất lỏng;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -157,7 +265,19 @@
     },
     "sample_id": 10,
     "model_answer": "Không bị xử phạt. Theo khoản 21.10.a nêu “trừ việc vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ”, trường hợp này thuộc ngoại lệ, nên không áp dụng hình phạt tiền, trừ điểm hay các biện pháp xử phạt khác.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "vận chuyển hàng hóa dạng trụ không chằng buộc hoặc chằng buộc không theo quy định",
+      "exception": "vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ",
+      "fine_if_penalized_min": 18000000,
+      "fine_if_penalized_max": 22000000,
+      "license_points_if_penalized": null,
+      "point_id": "21.10.a",
+      "point_content": "Vận chuyển hàng hóa là phương tiện vận tải, máy móc, thiết bị kỹ thuật, hàng dạng trụ không chằng buộc hoặc chằng buộc không theo quy định (trừ việc vận chuyển máy móc khổ lớn (quá khổ) trên phương tiện chuyên dùng và phải có giấy phép lưu hành trên đường bộ);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -173,7 +293,19 @@
     },
     "sample_id": 11,
     "model_answer": "Hành vi: xếp hàng hóa lên xe ô tô chở chất lỏng, trọng tải vượt quá cho phép từ 10 % đến < 20 %.\n\nTheo khoản 26.1.a của Nghị định 168/2024/NĐ‑CP, đối với xe ô tô chở chất lỏng chỉ có hình phạt khi vượt quá trọng tải **trên 20 %** (đến 50 %). Vì mức vượt trong trường hợp này chỉ nằm trong khoảng > 10 % – ≤ 20 %, không thuộc phạm vi quy định xử phạt.\n\n**Kết luận:** Hành vi không bị xử phạt theo quy định hiện hành. (Không có phạt tiền, không trừ điểm, không hình phạt bổ sung).",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Xếp hàng hóa lên xe ô tô (kể cả rơ moóc và sơ mi rơ moóc) vượt quá trọng tải cho phép tham gia giao thông trên 10% đến 50%",
+      "exception": "xe xi téc chở chất lỏng",
+      "fine_if_penalized_min": 500000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "26.1.a",
+      "point_content": "Xếp hàng hóa lên mỗi xe ô tô (kể cả rơ moóc và sơ mi rơ moóc) vượt quá trọng tải (khối lượng hàng chuyên chở) cho phép tham gia giao thông được ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe trên 10% đến 50% (trừ xe xi téc chở chất lỏng), trên 20% đến 50% đối với xe xi téc chở chất lỏng;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -189,7 +321,19 @@
     },
     "sample_id": 12,
     "model_answer": "Có, nhưng không bị xử phạt vì quy định 26.4.đ có ghi “trừ xe buýt nội tỉnh”. Do đó việc sử dụng xe buýt nội tỉnh không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm không thuộc phạm vi xử phạt theo mục này. Không có hình phạt nào áp dụng.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng xe ô tô kinh doanh vận tải hành khách không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định",
+      "exception": "xe buýt nội tỉnh",
+      "fine_if_penalized_min": 3000000,
+      "fine_if_penalized_max": 4000000,
+      "license_points_if_penalized": null,
+      "point_id": "26.4.đ",
+      "point_content": "Sử dụng xe ô tô kinh doanh vận tải hành khách không có dây đai an toàn tại các vị trí ghế ngồi, giường nằm theo quy định (trừ xe buýt nội tỉnh);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -205,7 +349,19 @@
     },
     "sample_id": 13,
     "model_answer": "Theo khoản 32.19.g Nghị định 168/2024/NĐ‑CP, việc “làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường” chỉ được áp dụng **trừ trường hợp phương tiện bị tịch thu**. Vì trong tình huống phương tiện đã bị tịch thu, người vi phạm **không phải thực hiện** các thủ tục trên và không có hình phạt bổ sung nào liên quan đến việc không thực hiện chúng. (Nếu phương tiện không bị tịch thu thì phải thực hiện các thủ tục trên; không có mức phạt tiền riêng cho việc không thực hiện, chỉ áp dụng hình phạt đã quy định cho hành vi vi phạm tương ứng.)",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Thực hiện hành vi vi phạm quy định tại điểm b khoản 3; điểm b, điểm c, điểm h khoản 7; điểm d, điểm đ khoản 8; điểm a khoản 12 Điều này buộc làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định",
+      "exception": "trường hợp bị tịch thu phương tiện",
+      "fine_if_penalized_min": null,
+      "fine_if_penalized_max": null,
+      "license_points_if_penalized": null,
+      "point_id": "32.19.g",
+      "point_content": "Thực hiện hành vi vi phạm quy định tại điểm b khoản 3; điểm b, điểm c, điểm h khoản 7; điểm d, điểm đ khoản 8; điểm a khoản 12 Điều này buộc làm thủ tục đổi, thu hồi, cấp mới, cấp chứng nhận đăng ký xe, biển số xe, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định (trừ trường hợp bị tịch thu phương tiện);"
+    },
+    "rubric_status": "incomplete"
   },
   {
     "question_type": "exception",
@@ -221,7 +377,19 @@
     },
     "sample_id": 14,
     "model_answer": "Có, nhưng **không bị xử phạt** vì quy định 34.3.c quy định “trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng”. Khi người lái có giấy phép lưu hành còn hiệu lực, hành vi điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn hoặc chở hàng vượt khổ giới hạn **không bị áp dụng hình phạt tiền, không bị trừ điểm, không có hình thức xử phạt bổ sung**. Nếu không có giấy phép lưu hành, thì sẽ bị phạt tiền từ 8.000.000 đ đến 10.000.000 đ.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông",
+      "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "34.3.c",
+      "point_content": "Điều khiển xe có kích thước bao ngoài vượt quá khổ giới hạn của đường bộ hoặc chở hàng vượt khổ giới hạn của đường bộ hoặc chở hàng vượt quá kích thước giới hạn xếp hàng hóa của xe tham gia giao thông, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -237,7 +405,19 @@
     },
     "sample_id": 15,
     "model_answer": "Trường hợp này không bị xử phạt vì quy định 34.3.d chỉ áp dụng “điều khiển xe có kích thước bao ngoài vượt quá kích thước giới hạn cho phép của xe theo quy định, **trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng**”. Vì người điều khiển đã có giấy phép lưu hành còn hiệu lực, hành vi được loại trừ nên không có hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe có kích thước bao ngoài vượt quá kích thước giới hạn cho phép của xe theo quy định",
+      "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "34.3.d",
+      "point_content": "Điều khiển xe có kích thước bao ngoài vượt quá kích thước giới hạn cho phép của xe theo quy định, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -253,7 +433,19 @@
     },
     "sample_id": 16,
     "model_answer": "Có, nhưng được miễn xử phạt vì có giấy phép lưu hành còn giá trị sử dụng; theo khoản 34.4.a, trường hợp “trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng” nên không áp dụng hình phạt tiền, trừ điểm hay các hình thức xử phạt khác.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 20% đến 50%",
+      "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
+      "fine_if_penalized_min": 13000000,
+      "fine_if_penalized_max": 15000000,
+      "license_points_if_penalized": null,
+      "point_id": "34.4.a",
+      "point_content": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 20% đến 50%, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -269,7 +461,19 @@
     },
     "sample_id": 17,
     "model_answer": "Có, nhưng trường hợp này được ngoại lệ theo điều 34.5.a của Nghị định 168/2024/NĐ‑CP: “trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng”. Vì người lái có giấy phép lưu hành hợp lệ, việc vượt tải trên 50 % không bị phạt tiền, không bị trừ điểm và không có hình thức xử phạt bổ suṇg khác.  (Không có xử phạt.)",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 50%",
+      "exception": "trường hợp có giấy phép lưu hành còn giá trị sử dụng",
+      "fine_if_penalized_min": 40000000,
+      "fine_if_penalized_max": 50000000,
+      "license_points_if_penalized": null,
+      "point_id": "34.5.a",
+      "point_content": "Điều khiển xe mà tổng trọng lượng (khối lượng toàn bộ) của xe hoặc tải trọng trục xe (bao gồm cả hàng hóa xếp trên xe, người được chở trên xe) vượt quá tải trọng cho phép của đường bộ trên 50%, trừ trường hợp có giấy phép lưu hành còn giá trị sử dụng;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -285,7 +489,19 @@
     },
     "sample_id": 18,
     "model_answer": "Không bị xử phạt vì hành vi sử dụng còi trong thời gian 22 giờ – 05 giờ tại khu đông dân cư được miễn đối với xe ưu tiên đang thực hiện nhiệm vụ theo quy định. Vì vậy không có hình phạt nào áp dụng.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+      "exception": "các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+      "fine_if_penalized_min": 400000,
+      "fine_if_penalized_max": 600000,
+      "license_points_if_penalized": null,
+      "point_id": "6.1.đ",
+      "point_content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -301,7 +517,19 @@
     },
     "sample_id": 19,
     "model_answer": "Không bị xử phạt. Theo khoản 6.3.b, việc sử dụng còi, rú ga liên tục khi gặp xe đi ngược chiều chỉ bị phạt 800.000‑1.000.000 đồng nếu không có dải phân cách có khả năng chống chói; có dải phân cách như mô tả thì hành vi được miễn xử phạt, không có mức phạt tiền, không trừ điểm, không có hình thức xử phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường, khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động, khi gặp xe đi ngược chiều, hoặc khi chuyển hướng xe tại nơi đường giao nhau",
+      "exception": "trừ trường hợp dải phân cách có khả năng chống chói; trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.b",
+      "point_content": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -317,7 +545,19 @@
     },
     "sample_id": 20,
     "model_answer": "Có, nhưng trường hợp này **không bị xử phạt** vì nằm trong ngoại lệ của quy định 6.3.c: “trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức”. Khi xe chỉ di chuyển theo đường cong (không có giao nhau cùng mức), hành vi không cần tín hiệu báo rẽ, không giảm tốc độ, không quan sát khoảng cách an toàn — được pháp luật miễn trách. Vì vậy không có mức phạt tiền, không trừ điểm, không hình phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng",
+      "exception": "điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.c",
+      "point_content": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức);"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -333,7 +573,19 @@
     },
     "sample_id": 21,
     "model_answer": "Không bị xử phạt. Theo khoản 6.3.h, hành vi “điều khiển xe ô tô kéo theo xe khác, vật khác” chỉ bị phạt khi không phải là trường hợp kéo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác **khi xe đó không tự chạy được**. Vì trong mô tả xe kéo không tự di chuyển, hành vi thuộc ngoại lệ, nên không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe ô tô kéo theo xe khác, vật khác",
+      "exception": "trừ trường hợp kéo theo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác khi xe này không tự chạy được",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.h",
+      "point_content": "Điều khiển xe ô tô kéo theo xe khác, vật khác (trừ trường hợp kéo theo một rơ moóc, sơ mi rơ moóc hoặc một xe ô tô, xe máy chuyên dùng khác khi xe này không tự chạy được); điều khiển xe ô tô đẩy xe khác, vật khác; điều khiển xe kéo rơ moóc, sơ mi rơ moóc kéo thêm rơ moóc hoặc xe khác, vật khác; không nối chắc chắn, an toàn giữa xe kéo và xe được kéo khi kéo nhau;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -349,7 +601,19 @@
     },
     "sample_id": 22,
     "model_answer": "Hành vi: người điều khiển ngồi trên xe kéo (tự chở mình).\n\nTheo quy định 6.3.i của Nghị định 168/2024/NĐ‑CP, hình phạt “phạt tiền từ 800.000 đồng đến 1.000.000 đồng” áp dụng cho hành vi “chở người trên xe được kéo, trừ người điều khiển”. Vì trong nội dung quy định đã có cụm “trừ người điều khiển”, nên việc người điều khiển tự ngồi trên xe kéo không thuộc phạm vi cấm của mục này → không bị xử phạt theo khoản 6.3.i.\n\nNếu có quy định khác (không có trong tài liệu cung cấp) quy định về việc người điều khiển không ngồi trên xe kéo, thì cần tham chiếu quy định đó; hiện tại dựa trên thông tin đã cho, không có hình phạt áp dụng.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chở người trên xe được kéo",
+      "exception": "người điều khiển",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.i",
+      "point_content": "Chở người trên xe được kéo, trừ người điều khiển;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -365,7 +629,19 @@
     },
     "sample_id": 23,
     "model_answer": "Có, bị xử phạt: phạt tiền từ 800.000 đồng đến 1.000.000 đồng; không có điểm phạt, không có hình thức xử phạt bổ sung khác.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định",
+      "exception": "loại xe ô tô chỉ có một hàng ghế",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.m",
+      "point_content": "Chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô ngồi cùng hàng ghế với người lái xe (trừ loại xe ô tô chỉ có một hàng ghế) hoặc không sử dụng thiết bị an toàn phù hợp cho trẻ em theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -381,7 +657,19 @@
     },
     "sample_id": 24,
     "model_answer": "Có, nhưng trong trường hợp này không bị xử phạt vì quy định 6.3.p có ngoại lệ: “trừ trường hợp các xe khác đi cùng chiều chạy quá tốc độ quy định”. Vì các xe khác đang vượt quá tốc độ, hành vi của người lái không thuộc phạm vi xử phạt. Vì vậy không có hình phạt nào áp dụng.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe chạy tốc độ thấp hơn các xe khác đi cùng chiều mà không đi về làn đường bên phải chiều đi của mình",
+      "exception": "trường hợp các xe khác đi cùng chiều chạy quá tốc độ quy định",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.3.p",
+      "point_content": "Điều khiển xe chạy tốc độ thấp hơn các xe khác đi cùng chiều mà không đi về làn đường bên phải chiều đi của mình, trừ trường hợp các xe khác đi cùng chiều chạy quá tốc độ quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -397,7 +685,19 @@
     },
     "sample_id": 25,
     "model_answer": "Không. Theo khoản 6.4.b, việc dừng xe trên cầu chỉ bị xử phạt tiền 2.000.000 – 3.000.000 đồng khi “trừ trường hợp tổ chức giao thông cho phép”. Khi có chỉ dẫn, biển báo hoặc quyết định của cơ quan quản lý giao thông cho phép dừng, hành vi không thuộc phạm vi vi phạm, vì vậy không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Dừng xe, đỗ xe tại các vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu; gầm cầu vượt; song song với một xe khác đang dừng, đỗ.",
+      "exception": "trên cầu, trừ trường hợp tổ chức giao thông cho phép; gầm cầu vượt, trừ những nơi cho phép dừng xe, đỗ xe",
+      "fine_if_penalized_min": 2000000,
+      "fine_if_penalized_max": 3000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.4.b",
+      "point_content": "Dừng xe, đỗ xe tại vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu (trừ trường hợp tổ chức giao thông cho phép), gầm cầu vượt (trừ những nơi cho phép dừng xe, đỗ xe), song song với một xe khác đang dừng, đỗ, trừ hành vi vi phạm quy định tại điểm c khoản 7 Điều này;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -413,7 +713,19 @@
     },
     "sample_id": 26,
     "model_answer": "Có, bị xử phạt. Hành vi quay đầu xe ở các vị trí cấm (phần đường dành cho người đi bộ, trên cầu, đầu cầu, gầm cầu vượt, ngầm, nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn cong tầm nhìn bị che khuất, trên đường một chiều) mà không có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo tạm thời/địa điểm bố trí nơi quay đầu xe → phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng. (Không có điểm trừ, không có xử phạt bổ sung khác). Nếu có hiệu lệnh hoặc chỉ dẫn cho phép quay đầu tại vị trí đó, thì không bị xử phạt.",
-    "answer_provider": "openrouter"
+    "answer_provider": "openrouter",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường một chiều",
+      "exception": "khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe",
+      "fine_if_penalized_min": 2000000,
+      "fine_if_penalized_max": 3000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.4.i",
+      "point_content": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường một chiều, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -429,7 +741,19 @@
     },
     "sample_id": 27,
     "model_answer": "Có, hành vi “tránh xe đi ngược chiều không đúng quy định” bị xử phạt tiền từ 4.000.000 đ đến 6.000.000 đ (điểm trừ, tước quyền… nếu có quy định khác). Tuy nhiên, theo điểm b khoản 3 Điều này, trường hợp vi phạm đồng thời “sử dụng đèn chiếu xa khi tránh xe đi ngược chiều” **được loại trừ** khỏi hình phạt trên. Vì vậy, trong tình huống mô tả, không áp dụng mức phạt 4‑6 triệu đồng. Nếu muốn xử phạt vi phạm sử dụng đèn chiếu xa, cần tham chiếu đến quy định riêng về việc sử dụng đèn chiếu xa (không có trong trích dẫn hiện tại).",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Tránh xe đi ngược chiều không đúng quy định",
+      "exception": "hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định",
+      "fine_if_penalized_min": 4000000,
+      "fine_if_penalized_max": 6000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.5.c",
+      "point_content": "Tránh xe đi ngược chiều không đúng quy định (trừ hành vi vi phạm sử dụng đèn chiếu xa khi tránh xe đi ngược chiều quy định tại điểm b khoản 3 Điều này); không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -445,7 +769,19 @@
     },
     "sample_id": 28,
     "model_answer": "Không bị xử phạt. Theo khoản 6.5.i, hành vi “đi vào khu vực cấm, đường có biển báo cấm đi vào đối với loại phương tiện đang điều khiển” chỉ bị phạt tiền 4 .000 000‑6 .000 000 đồng, **trừ** trường hợp “xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định”. Vì xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp nên được miễn xử phạt; không có hình phạt tiền, không trừ điểm, không có biện pháp xử phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+      "exception": "các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+      "fine_if_penalized_min": 4000000,
+      "fine_if_penalized_max": 6000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.5.i",
+      "point_content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 9, điểm đ khoản 11 Điều này, hành vi bị cấm đi vào công trình thủy lợi và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -461,7 +797,19 @@
     },
     "sample_id": 29,
     "model_answer": "Có, hành vi này **không bị xử phạt** vì quy định 6.6.d của Nghị định 168/2024/NĐ‑CP có ngoại lệ: “đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan.” Vì người lái xe chỉ đi qua vỉa hè để vào nhà hoặc cơ quan, nên không thuộc phạm vi xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe đi trên vỉa hè",
+      "exception": "điều khiển xe đi qua vỉa hè để vào nhà, cơ quan",
+      "fine_if_penalized_min": 6000000,
+      "fine_if_penalized_max": 8000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.6.d",
+      "point_content": "Điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -477,7 +825,19 @@
     },
     "sample_id": 30,
     "model_answer": "Không bị xử phạt. Theo khoản 6.9.d, hành vi đi ngược chiều trên đường một chiều (có biển “Cấm đi ngược chiều”) chỉ bị phạt tiền 18‑20 triệu đồng, **trừ các trường hợp xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp**. Vì xe trong tình huống là xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp, nên không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\"",
+      "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+      "fine_if_penalized_min": 18000000,
+      "fine_if_penalized_max": 20000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.9.d",
+      "point_content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ các hành vi vi phạm quy định tại điểm đ khoản 11 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -493,7 +853,19 @@
     },
     "sample_id": 31,
     "model_answer": "Không bị xử phạt. Quy định 6.11.đ quy định phạt tiền 30‑40 triệu đồng cho hành vi lùi xe trên đường cao tốc, nhưng có ngoại lệ “trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định”. Vì xe là xe ưu tiên thực hiện nhiệm vụ khẩn cấp, hành vi lùi xe trên cao tốc không thuộc đối tượng xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc",
+      "exception": "các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+      "fine_if_penalized_min": 30000000,
+      "fine_if_penalized_max": 40000000,
+      "license_points_if_penalized": null,
+      "point_id": "6.11.đ",
+      "point_content": "Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc, trừ các xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -509,7 +881,19 @@
     },
     "sample_id": 32,
     "model_answer": "Không bị xử phạt. Theo quy định 7.1.h, việc sử dụng đèn chiếu xa khi gặp xe đi ngược chiều chỉ bị xử phạt nếu không có dải phân cách có khả năng chống chói; có dải phân cách như mô tả nên hành vi này không thuộc phạm vi xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "sử dụng đèn chiếu xa khi gặp xe đi ngược chiều",
+      "exception": "trường hợp dải phân cách có khả năng chống chói",
+      "fine_if_penalized_min": 200000,
+      "fine_if_penalized_max": 400000,
+      "license_points_if_penalized": null,
+      "point_id": "7.1.h",
+      "point_content": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -525,7 +909,19 @@
     },
     "sample_id": 33,
     "model_answer": "Không bị xử phạt. Theo quy định 7.1.i, việc sử dụng còi trong thời gian 22 h‑05 h ở khu dân cư, khu cơ sở khám bệnh, chữa bệnh chỉ bị phạt tiền 200.000‑400.000 đồng, **trừ trường hợp xe ưu tiên đang đi làm nhiệm vụ**. Vì xe đang thực hiện nhiệm vụ ưu tiên, hành vi này nằm trong ngoại lệ, nên không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+      "exception": "các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+      "fine_if_penalized_min": 200000,
+      "fine_if_penalized_max": 400000,
+      "license_points_if_penalized": null,
+      "point_id": "7.1.i",
+      "point_content": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -541,7 +937,19 @@
     },
     "sample_id": 34,
     "model_answer": "Không bị xử phạt. Theo khoản 7.2.g, việc chở trẻ em dưới 12 tuổi là trường hợp ngoại lệ, không thuộc danh sách các hành vi bị phạt tiền 400.000‑600.000 đồng. Vì vậy hành vi này không bị xử phạt theo Nghị định 168/2024/NĐ‑CP.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chở theo 02 người trên xe",
+      "exception": "chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật",
+      "fine_if_penalized_min": 400000,
+      "fine_if_penalized_max": 600000,
+      "license_points_if_penalized": null,
+      "point_id": "7.2.g",
+      "point_content": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -557,7 +965,19 @@
     },
     "sample_id": 35,
     "model_answer": "Có, nhưng không bị xử phạt. Theo khoản 7.2.i, việc không đội mũ bảo hiểm cho người ngồi trên xe máy chỉ bị phạt 400.000‑600.000 đồng, **trừ trường hợp chở trẻ em dưới 06 tuổi**. Vì trẻ dưới 6 tuổi được miễn chịu hình phạt, hành vi này không bị xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chở người ngồi trên xe không đội mũ bảo hiểm cho người đi mô tô, xe máy hoặc đội mũ bảo hiểm nhưng không cài quai đúng quy cách",
+      "exception": "Trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, hoặc người có hành vi vi phạm pháp luật",
+      "fine_if_penalized_min": 400000,
+      "fine_if_penalized_max": 600000,
+      "license_points_if_penalized": null,
+      "point_id": "7.2.i",
+      "point_content": "Chở người ngồi trên xe không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -573,7 +993,19 @@
     },
     "sample_id": 36,
     "model_answer": "Có, nhưng không bị xử phạt vì trường hợp này thuộc ngoại lệ tại khoản 7.3.a: “trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức”. Vì người lái xe chỉ đi theo đường cong của đoạn đường mà không có giao nhau cùng mức, các hành vi “chuyển hướng không quan sát…”, “không có tín hiệu báo hướng rẽ…”, v.v. không được áp dụng hình phạt. Do đó không có mức phạt tiền, không có điểm trừ, không có hình thức xử phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng",
+      "exception": "điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức",
+      "fine_if_penalized_min": 600000,
+      "fine_if_penalized_max": 800000,
+      "license_points_if_penalized": null,
+      "point_id": "7.3.a",
+      "point_content": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức); điều khiển xe rẽ trái tại nơi có biển báo hiệu có nội dung cấm rẽ trái đối với loại phương tiện đang điều khiển; điều khiển xe rẽ phải tại nơi có biển báo hiệu có nội dung cấm rẽ phải đối với loại phương tiện đang điều khiển;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -589,7 +1021,19 @@
     },
     "sample_id": 37,
     "model_answer": "Không bị xử phạt. Theo khoản 7.4.đ Nghị định 168/2024/NĐ‑CP, việc sử dụng “thiết bị âm thanh (trừ thiết bị trợ thính)” là hành vi cấm; vì thiết bị trợ thính được loại trừ nên không thuộc danh sách vi phạm, do đó không áp dụng hình phạt tiền, trừ điểm hay các biện pháp xử phạt khác.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh, dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác.",
+      "exception": "trừ thiết bị trợ thính",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.4.đ",
+      "point_content": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -605,7 +1049,19 @@
     },
     "sample_id": 38,
     "model_answer": "Không bị xử phạt. Theo khoản 7.6 b, việc “đi vào khu vực cấm, đường có biển báo cấm đi vào đối với loại phương tiện đang điều khiển” chỉ bị phạt khi không thuộc “các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định”. Vì xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp nên được miễn xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+      "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+      "fine_if_penalized_min": 2000000,
+      "fine_if_penalized_max": 3000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.6.b",
+      "point_content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm a, điểm b khoản 7 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -621,7 +1077,19 @@
     },
     "sample_id": 39,
     "model_answer": "Không bị xử phạt vì quy định 7.7.a quy định “đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan”. Vì hành vi là đi qua vỉa hè để vào nhà hoặc cơ quan, nên được miễn xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "điều khiển xe đi trên vỉa hè",
+      "exception": "điều khiển xe đi qua vỉa hè để vào nhà, cơ quan",
+      "fine_if_penalized_min": 4000000,
+      "fine_if_penalized_max": 6000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.7.a",
+      "point_content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -637,7 +1105,19 @@
     },
     "sample_id": 40,
     "model_answer": "Không bị xử phạt. Theo khoản 7.7.b của Nghị định 168/2024/NĐ‑CP, mức phạt tiền 4.000.000 – 6.000.000 đồng áp dụng cho việc điều khiển xe vào đường cao tốc “trừ xe phục vụ việc quản lý, bảo trì đường cao tốc”. Vì người lái đang thực hiện công việc quản lý, bảo trì nên xe thuộc trường hợp được miễn xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe đi vào đường cao tốc",
+      "exception": "xe phục vụ việc quản lý, bảo trì đường cao tốc",
+      "fine_if_penalized_min": 4000000,
+      "fine_if_penalized_max": 6000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.7.b",
+      "point_content": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -653,7 +1133,19 @@
     },
     "sample_id": 41,
     "model_answer": "Có. Hành vi cho trẻ em dưới 06 tuổi ngồi ghế trước mà không có thiết bị cố định (ghế trẻ em) là vi phạm quy định về an toàn giao thông.\n\n- **Phạt tiền:** 2.000.000 đ – 3.000.000 đồng.  \n- **Trừ điểm:** 6 điểm giấy phép lái xe.  \n- **Xử phạt bổ sung / biện pháp khắc phục:** Không có (không tịch thu, không tước quyền).  \n\n(Áp dụng Nghị định 168/2024/NĐ‑CP, mục quy định “đưa trẻ em dưới 06 tuổi ngồi ghế trước”).",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe",
+      "exception": "chở trẻ em dưới 06 tuổi ngồi phía trước",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.9.h",
+      "point_content": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe, trừ trường hợp chở trẻ em dưới 06 tuổi ngồi phía trước;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -669,7 +1161,19 @@
     },
     "sample_id": 42,
     "model_answer": "Có, hành vi “điều khiển xe thành đoàn gây cản trở giao thông” theo quy định 7.9.i thường bị phạt tiền 8.000.000‑10.000.000 đồng. Tuy nhiên, quy định có nêu rõ “trừ trường hợp được cơ quan có thẩm quyền cấp phép”. Vì người điều khiển đã có giấy phép của cơ quan có thẩm quyền, hành vi này không thuộc trường hợp xử phạt. Không có hình phạt tiền, không trừ điểm, không có biện pháp bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe thành đoàn gây cản trở giao thông",
+      "exception": "trường hợp được cơ quan có thẩm quyền cấp phép",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.9.i",
+      "point_content": "Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -685,7 +1189,19 @@
     },
     "sample_id": 43,
     "model_answer": "Không bị xử phạt; quy định 7.9.k chỉ xử phạt khi sử dụng còi/rú ga liên tục trong các khu trên, **trừ** các xe ưu tiên đang thực hiện nhiệm vụ theo quy định. Vì xe ưu tiên đang đi làm nhiệm vụ, hành vi này không thuộc phạm vi xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+      "exception": "các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+      "fine_if_penalized_min": 8000000,
+      "fine_if_penalized_max": 10000000,
+      "license_points_if_penalized": null,
+      "point_id": "7.9.k",
+      "point_content": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -701,7 +1217,19 @@
     },
     "sample_id": 44,
     "model_answer": "Không. Theo khoản 8.2 b, việc dừng hoặc đỗ xe trên cầu chỉ bị xử phạt (phạt tiền 600.000 – 800.000 đồng) khi **không có sự cho phép của tổ chức giao thông**. Khi đã được tổ chức giao thông cho phép, hành vi này không thuộc danh sách vi phạm, vì vậy không có hình phạt nào áp dụng.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Dừng xe, đỗ xe trên cầu",
+      "exception": "trường hợp tổ chức giao thông cho phép",
+      "fine_if_penalized_min": 600000,
+      "fine_if_penalized_max": 800000,
+      "license_points_if_penalized": null,
+      "point_id": "8.2.b",
+      "point_content": "Dừng xe, đỗ xe tại các vị trí: bên trái đường một chiều hoặc bên trái (theo hướng lưu thông) của đường đôi; trên đoạn đường cong hoặc gần đầu dốc nơi tầm nhìn bị che khuất; trên cầu (trừ trường hợp tổ chức giao thông cho phép), gầm cầu vượt (trừ những nơi cho phép dừng xe, đỗ xe), song song với một xe khác đang dừng, đỗ; nơi đường bộ giao nhau hoặc trong phạm vi 05 mét tính từ mép đường giao nhau; điểm đón, trả khách; trước cổng hoặc trong phạm vi 05 mét hai bên cổng trụ sở cơ quan, tổ chức có bố trí đường cho xe ra, vào; nơi phần đường có bề rộng chỉ đủ cho một làn xe cơ giới; che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông; nơi mở dải phân cách giữa; cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đường có một làn xe cơ giới trên một chiều đường, trừ hành vi vi phạm quy định tại điểm b khoản 6 Điều này;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -717,7 +1245,19 @@
     },
     "sample_id": 45,
     "model_answer": "Không bị xử phạt. Theo khoản 8.2.c, hành vi “rời vị trí lái, tắt máy khi dừng xe” chỉ bị phạt 600.000‑800.000 đồng khi không thuộc các trường hợp ngoại lệ; trong trường hợp người lái rời vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa hoặc kiểm tra kỹ thuật xe, hành vi này được quy định là ngoại lệ, do đó không áp dụng hình phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "rời vị trí lái, tắt máy khi dừng xe",
+      "exception": "rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe",
+      "fine_if_penalized_min": 600000,
+      "fine_if_penalized_max": 800000,
+      "license_points_if_penalized": null,
+      "point_id": "8.2.c",
+      "point_content": "Dừng xe, đỗ xe ở lòng đường trái quy định; dừng xe, đỗ xe trên đường dành riêng cho xe buýt, trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước, trên phần đường dành cho người đi bộ qua đường; rời vị trí lái, tắt máy khi dừng xe (trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe) hoặc rời vị trí lái khi dừng xe nhưng không sử dụng phanh đỗ xe (hoặc thực hiện biện pháp an toàn khác); mở cửa xe, để cửa xe mở không bảo đảm an toàn;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -733,7 +1273,19 @@
     },
     "sample_id": 46,
     "model_answer": "Không bị xử phạt. Điều 8.3.b quy định mức phạt 800.000‑1.000.000 đồng cho việc sử dụng còi liên tục khi gặp người đi bộ hoặc trên đoạn đường qua khu dân cư, **trừ trường hợp xe ưu tiên đang thực hiện nhiệm vụ theo quy định**. Vì xe ưu tiên đang thực hiện nhiệm vụ và sử dụng còi liên tục đúng quy định, nên không thuộc hành vi vi phạm, không áp dụng hình phạt nào.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường, khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động, khi gặp xe đi ngược chiều, hoặc khi chuyển hướng xe tại nơi đường giao nhau.",
+      "exception": "trừ trường hợp dải phân cách có khả năng chống chói; trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+      "fine_if_penalized_min": 800000,
+      "fine_if_penalized_max": 1000000,
+      "license_points_if_penalized": null,
+      "point_id": "8.3.b",
+      "point_content": "Sử dụng còi, rú ga liên tục; sử dụng còi hơi, sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -749,7 +1301,19 @@
     },
     "sample_id": 47,
     "model_answer": "Không bị xử phạt. Quy định 8.4.đ đặt mức phạt 1.000.000‑2.000.000 đồng cho việc quay đầu xe ở phần đường dành cho người đi bộ qua đường trên cầu, **trừ khi có hiệu lệnh của người điều khiển giao thông, chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông đã bố trí nơi quay đầu**. Vì trong tình huống có hiệu lệnh/biển chỉ dẫn cho phép, hành vi không thuộc phạm vi vi phạm, nên không áp dụng phạt tiền, không trừ điểm, không có hình thức xử phạt bổ sung.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, ngầm, gầm cầu vượt",
+      "exception": "khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe",
+      "fine_if_penalized_min": 1000000,
+      "fine_if_penalized_max": 2000000,
+      "license_points_if_penalized": null,
+      "point_id": "8.4.đ",
+      "point_content": "Quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, ngầm, gầm cầu vượt, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời hoặc tổ chức giao thông tại những khu vực này có bố trí nơi quay đầu xe;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -765,7 +1329,19 @@
     },
     "sample_id": 48,
     "model_answer": "Không bị xử phạt. Theo khoản 8.6.d, việc “đi vào khu vực cấm, đường có biển báo cấm đi vào” chỉ bị phạt tiền 3‑5 triệu đồng, **trừ** trường hợp xe ưu tiên đang thực hiện nhiệm vụ khẩn cấp theo quy định; do đó hành vi này không thuộc diện xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+      "exception": "các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+      "fine_if_penalized_min": 3000000,
+      "fine_if_penalized_max": 5000000,
+      "license_points_if_penalized": null,
+      "point_id": "8.6.d",
+      "point_content": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm d khoản 7, điểm đ khoản 9 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -781,7 +1357,19 @@
     },
     "sample_id": 49,
     "model_answer": "Không bị xử phạt. Theo khoản 8.7.d, mức phạt 6 .000 000 – 8 .000 000 đồng cho hành vi đi ngược chiều trên đường một chiều (có biển “Cấm đi ngược chiều”) chỉ áp dụng “trừ các hành vi vi phạm quy định tại điểm đ khoản 9 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định”. Vì xe đang là xe ưu tiên thực hiện nhiệm vụ khẩn cấp, nên hành vi này được miễn xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”.",
+      "exception": "Các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định.",
+      "fine_if_penalized_min": 6000000,
+      "fine_if_penalized_max": 8000000,
+      "license_points_if_penalized": null,
+      "point_id": "8.7.d",
+      "point_content": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ các hành vi vi phạm quy định tại điểm đ khoản 9 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định."
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -797,7 +1385,19 @@
     },
     "sample_id": 50,
     "model_answer": "Không bị xử phạt. Theo khoản 8.8.b Nghị định 168/2024/NĐ‑CP, mức phạt 14‑16 triệu đồng áp dụng cho người điều khiển xe máy chuyên dùng có tốc độ thiết kế dưới mức tối thiểu khi vào đường cao tốc, **trừ** trường hợp xe là phương tiện hoặc thiết bị phục vụ việc quản lý, bảo trì đường cao tốc. Vì xe máy trong tình huống này thuộc loại “phương tiện, thiết bị phục vụ việc quản lý, bảo trì đường cao tốc”, nên được miễn xử phạt.",
-    "answer_provider": "groq"
+    "answer_provider": "groq",
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Điều khiển xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc đi vào đường cao tốc",
+      "exception": "phương tiện, thiết bị phục vụ việc quản lý, bảo trì đường cao tốc",
+      "fine_if_penalized_min": 14000000,
+      "fine_if_penalized_max": 16000000,
+      "license_points_if_penalized": null,
+      "point_id": "8.8.b",
+      "point_content": "Điều khiển xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc đi vào đường cao tốc, trừ phương tiện, thiết bị phục vụ việc quản lý, bảo trì đường cao tốc;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -811,7 +1411,19 @@
       "label": "o",
       "content": "Xe đạp, xe đạp máy, xe xích lô chở quá số người quy định, trừ trường hợp chở người bệnh đi cấp cứu;"
     },
-    "sample_id": 51
+    "sample_id": 51,
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Xe đạp, xe đạp máy, xe xích lô chở quá số người quy định",
+      "exception": "trường hợp chở người bệnh đi cấp cứu",
+      "fine_if_penalized_min": 100000,
+      "fine_if_penalized_max": 200000,
+      "license_points_if_penalized": null,
+      "point_id": "9.1.o",
+      "point_content": "Xe đạp, xe đạp máy, xe xích lô chở quá số người quy định, trừ trường hợp chở người bệnh đi cấp cứu;"
+    },
+    "rubric_status": "ok"
   },
   {
     "question_type": "exception",
@@ -825,6 +1437,18 @@
       "label": "đ",
       "content": "Chở người ngồi trên xe đạp máy không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật."
     },
-    "sample_id": 52
+    "sample_id": 52,
+    "rubrics": {
+      "expected_penalized": false,
+      "is_exception_case": true,
+      "normal_action": "Chở người ngồi trên xe đạp máy không đội mũ bảo hiểm cho người đi mô tô, xe máy hoặc đội mũ bảo hiểm không cài quai đúng quy cách.",
+      "exception": "trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật.",
+      "fine_if_penalized_min": 400000,
+      "fine_if_penalized_max": 600000,
+      "license_points_if_penalized": null,
+      "point_id": "9.4.đ",
+      "point_content": "Chở người ngồi trên xe đạp máy không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật."
+    },
+    "rubric_status": "ok"
   }
 ]

@@ -3,3 +3,4 @@ hienv/
 .env
 __pycache__/   
 generate_data/
+reports/
